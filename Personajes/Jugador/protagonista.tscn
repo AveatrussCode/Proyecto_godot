@@ -1,0 +1,56 @@
+[gd_scene load_steps=8 format=3 uid="uid://xggenndnewjo"]
+
+[ext_resource type="Script" uid="uid://bwoc68ma7smee" path="res://Personajes/Jugador/protagonista.gd" id="1_kv6xp"]
+[ext_resource type="Texture2D" uid="uid://bfrrhsjjt4d42" path="res://Personajes/Jugador/Imagenes/atras.png" id="1_qhvmy"]
+[ext_resource type="Texture2D" uid="uid://d1o3ql5py0nvr" path="res://Personajes/Jugador/Imagenes/adelante.png" id="2_40nvw"]
+[ext_resource type="Texture2D" uid="uid://d22uxjw724b1g" path="res://Personajes/Jugador/Imagenes/derecha.png" id="4_m870a"]
+[ext_resource type="Texture2D" uid="uid://ykg0r35hnvmd" path="res://Personajes/Jugador/Imagenes/izquieda.png" id="5_lpmik"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bhhrs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qhvmy")
+}],
+"loop": true,
+"name": &"abajo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_40nvw")
+}],
+"loop": true,
+"name": &"arriba",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_m870a")
+}],
+"loop": true,
+"name": &"derecha",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_lpmik")
+}],
+"loop": true,
+"name": &"izquierda",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x0hug"]
+size = Vector2(12, 40)
+
+[node name="Protagonista" type="CharacterBody2D"]
+script = ExtResource("1_kv6xp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_bhhrs")
+animation = &"arriba"
+frame_progress = 0.46436
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_x0hug")
