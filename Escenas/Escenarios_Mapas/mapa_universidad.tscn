@@ -756,3 +756,5 @@ tile_set = SubResource("TileSet_d7gk0")
 
 [node name="Protagonista" parent="." instance=ExtResource("4_hx5m3")]
 position = Vector2(496, 272)
+
+[node name="Camera2D" type="Camera2D" parent="Protagonista"]
