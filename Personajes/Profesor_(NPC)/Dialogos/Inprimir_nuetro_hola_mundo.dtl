@@ -1,0 +1,10 @@
+join Profesor_zela center
+Profesor_zela: Buenos dias alumnos
+Profesor_zela: El dia de hoy veremos como hacer nuestro primer hola mundo
+Profesor_zela: El hola mundo es un clasico de iniciacion para todo programador
+Profesor_zela: Primero hablemos del print
+Profesor_zela: El print es una funcion la cual se encarga de mostrar en pantalla o terminal letras, palabras y numeros
+Profesor_zela: Digame que usamos para mostrar cosas en pantalla
+- Un if
+- print
+	Profesor_zela: Genial

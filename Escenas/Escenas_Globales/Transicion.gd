@@ -1,7 +1,7 @@
 extends ColorRect
 
 
-func star(transition_type):
+func start(transition_type):
 	match transition_type:
 		1:
 			$AnimationPlayer.play("Animacion_trancicion")

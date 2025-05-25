@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=3 uid="uid://b6ib0qqmab0du"]
+
+[ext_resource type="Script" uid="uid://cavsgmth8qerh" path="res://Escenas/Escenarios_Mapas/clase_computacion.gd" id="1_4um33"]
+[ext_resource type="Texture2D" uid="uid://bhdi6klvf71km" path="res://Imagenes/tile_map_mapa/aula.png" id="1_71d75"]
+[ext_resource type="PackedScene" uid="uid://xggenndnewjo" path="res://Personajes/Jugador/protagonista.tscn" id="2_fcphl"]
+[ext_resource type="Script" uid="uid://dtfrli07sqs57" path="res://Escenas/Escenarios_Mapas/acceso_a_la_clase_al_precionar.gd" id="3_71d75"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fcphl"]
+size = Vector2(166, 35)
+
+[node name="Clase_computacion" type="Node2D"]
+script = ExtResource("1_4um33")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(320, 179)
+scale = Vector2(2, 2.01111)
+texture = ExtResource("1_71d75")
+
+[node name="Acceso_a_la_clase_al_precionar" type="Area2D" parent="."]
+position = Vector2(8, -40)
+script = ExtResource("3_71d75")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Acceso_a_la_clase_al_precionar"]
+position = Vector2(328, 81.5)
+shape = SubResource("RectangleShape2D_fcphl")
+
+[node name="Label" type="Label" parent="Acceso_a_la_clase_al_precionar"]
+offset_left = 64.0
+offset_top = 24.0
+offset_right = 600.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.227451, 0, 0, 1)
+theme_override_font_sizes/font_size = 23
+text = "Presiona enter"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Protagonista" parent="." instance=ExtResource("2_fcphl")]
+position = Vector2(72, 320)
+
+[node name="Camera2D" type="Camera2D" parent="Protagonista"]
+
+[connection signal="body_entered" from="Acceso_a_la_clase_al_precionar" to="Acceso_a_la_clase_al_precionar" method="_on_body_entered"]
+[connection signal="body_exited" from="Acceso_a_la_clase_al_precionar" to="Acceso_a_la_clase_al_precionar" method="_on_body_exited"]

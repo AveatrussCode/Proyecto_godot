@@ -22,9 +22,16 @@ GLOBAL="*res://Escenas/Escenas_Globales/Global.gd"
 [dialogic]
 
 directories/dch_directory={
+"Profesor_zela": "res://Personajes/Profesor_(NPC)/Profesor_zela.dch",
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
-directories/dtl_directory={}
+directories/dtl_directory={
+"Inprimir_nuetro_hola_mundo": "res://Personajes/Profesor_(NPC)/Dialogos/Inprimir_nuetro_hola_mundo.dtl"
+}
+layout/style_list=["res://Estilo_novela.tres"]
+layout/default_style="res://Estilo_novela.tres"
+glossary/default_case_sensitive=true
+variables={}
 
 [display]
 

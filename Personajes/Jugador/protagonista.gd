@@ -12,12 +12,11 @@ func _physics_process(delta):
 		velocity = direction.normalized() * speed
 	else:
 		velocity = Vector2.ZERO
-
 	move_and_slide()
 
 
 		
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_pressed("left"):
 		$AnimatedSprite2D.play("izquierda")
 	elif Input.is_action_pressed("right"):

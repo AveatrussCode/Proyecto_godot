@@ -7,7 +7,7 @@ func _ready():
 func _on_new_game_pressed() -> void:
 	GLOBAL.create_transition(self,2)
 	await get_tree().create_timer(1).timeout
-	get_tree().change_scene_to_file("res://Escenas/Escenarios_Mapas/mapa_universidad.tscn")
+	get_tree().change_scene_to_file("res://Escenas/Escenarios_Mapas/mapa_principal/mapa_universidad.tscn")
 
 
 func _on_load_game_pressed() -> void:
