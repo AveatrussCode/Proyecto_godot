@@ -6,13 +6,13 @@
 &"custom_info": {
 "sound_mood_default": "",
 "sound_moods": {},
-"style": ""
+"style": "Estilo_novela"
 },
 &"default_portrait": "sprite_principal",
-&"description": "",
+&"description": "Es un profesor",
 &"display_name": "Profesor_zela",
 &"mirror": false,
-&"nicknames": ["Eduardo"],
+&"nicknames": ["EL malote"],
 &"offset": Vector2(0, 0),
 &"portraits": {
 "sprite_principal": {

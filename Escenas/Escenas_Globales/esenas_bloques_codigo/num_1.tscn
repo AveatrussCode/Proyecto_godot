@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://dso3lyut8d61p"]
+
+[ext_resource type="Script" uid="uid://bc1lu678glicr" path="res://Objeto_movible.gd" id="1_grlo3"]
+[ext_resource type="FontFile" uid="uid://bevumerkk77t4" path="res://fuentes_de_letras/AkayaKanadaka-Regular.ttf" id="2_kc0hp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wequ1"]
+size = Vector2(32, 32)
+
+[node name="num_1" type="Node2D"]
+script = ExtResource("1_grlo3")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_wequ1")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kc0hp")
+theme_override_font_sizes/font_size = 26
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

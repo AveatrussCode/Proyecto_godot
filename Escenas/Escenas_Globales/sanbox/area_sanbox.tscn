@@ -1,0 +1,53 @@
+[gd_scene load_steps=10 format=3 uid="uid://bdackrptrbk2r"]
+
+[ext_resource type="PackedScene" uid="uid://xqkhfr77lh8d" path="res://Escenas/Escenas_Globales/esenas_bloques_codigo/area/print_area_funcion.tscn" id="1_6njh0"]
+[ext_resource type="PackedScene" uid="uid://b1mhrcq00sbhk" path="res://Escenas/Escenas_Globales/esenas_bloques_codigo/area/variable_area_hola_mundo.tscn" id="2_vqtke"]
+[ext_resource type="PackedScene" uid="uid://ddayoaivsj4yt" path="res://Escenas/Escenas_Globales/esenas_bloques_codigo/area/variable_area_una_letra.tscn" id="3_e4gak"]
+[ext_resource type="PackedScene" uid="uid://m1bu4npj133j" path="res://Escenas/Escenas_Globales/esenas_bloques_codigo/variable_hola_mundo.tscn" id="4_curu3"]
+[ext_resource type="PackedScene" uid="uid://tdfk1shsv1eo" path="res://Escenas/Escenas_Globales/esenas_bloques_codigo/print_funcion.tscn" id="5_5w1gg"]
+[ext_resource type="PackedScene" uid="uid://4j2x6pkucga6" path="res://Escenas/Escenas_Globales/esenas_bloques_codigo/variable_X.tscn" id="6_f7j21"]
+[ext_resource type="PackedScene" uid="uid://bx61ftlpeqxob" path="res://Escenas/Escenas_Globales/esenas_bloques_codigo/variable_Y.tscn" id="7_ghn0g"]
+[ext_resource type="PackedScene" uid="uid://c1nnkb3vwkeyi" path="res://Escenas/Escenas_Globales/esenas_bloques_codigo/signo_=_.tscn" id="8_x555i"]
+[ext_resource type="PackedScene" uid="uid://dso3lyut8d61p" path="res://Escenas/Escenas_Globales/esenas_bloques_codigo/num_1.tscn" id="9_pbx3a"]
+
+[node name="Area_sanbox" type="Node2D"]
+
+[node name="Area_codigo" type="Node2D" parent="."]
+
+[node name="Area_print" parent="Area_codigo" instance=ExtResource("1_6njh0")]
+position = Vector2(48, 32)
+
+[node name="var_area_hola_mundo" parent="Area_codigo" instance=ExtResource("2_vqtke")]
+position = Vector2(168, 32)
+
+[node name="var_una_letra" parent="Area_codigo" instance=ExtResource("3_e4gak")]
+position = Vector2(32, 72)
+
+[node name="var_una_letra2" parent="Area_codigo" instance=ExtResource("3_e4gak")]
+position = Vector2(72, 72)
+
+[node name="var_una_letra3" parent="Area_codigo" instance=ExtResource("3_e4gak")]
+position = Vector2(32, 112)
+
+[node name="var_una_letra4" parent="Area_codigo" instance=ExtResource("3_e4gak")]
+position = Vector2(112, 72)
+
+[node name="codigo_mobible" type="Node2D" parent="."]
+
+[node name="var_hola_mundo" parent="codigo_mobible" instance=ExtResource("4_curu3")]
+position = Vector2(544, 80)
+
+[node name="print_funcion" parent="codigo_mobible" instance=ExtResource("5_5w1gg")]
+position = Vector2(496, 32)
+
+[node name="var_X" parent="codigo_mobible" instance=ExtResource("6_f7j21")]
+position = Vector2(480, 128)
+
+[node name="var_Y" parent="codigo_mobible" instance=ExtResource("7_ghn0g")]
+position = Vector2(480, 176)
+
+[node name="sig_=_" parent="codigo_mobible" instance=ExtResource("8_x555i")]
+position = Vector2(480, 224)
+
+[node name="num_1" parent="codigo_mobible" instance=ExtResource("9_pbx3a")]
+position = Vector2(480, 272)
