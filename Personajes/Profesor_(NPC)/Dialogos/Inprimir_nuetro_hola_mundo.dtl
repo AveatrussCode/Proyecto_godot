@@ -1,15 +1,23 @@
 join Profesor_zela left
-Profesor_zela: dgashgasdg
-Profesor_zela: Buenos dias alumnos
-Profesor_zela: El dia de hoy veremos como hacer nuestro primer hola mundo
-Profesor_zela: El hola mundo es un clasico de iniciacion para todo programador
-Profesor_zela: un print es com cuando tu andas una hija a imprimeir
-Profesor_zela: El print es una funcion la cual se encarga de mostrar en pantalla o terminal letras, palabras y numeros
-- Un if
-	Profesor_zela: esta mal
-	no puede ser
-- print
-	Profesor_zela: Genial
-- 
-	<Empty Text Event>
-	return
+Profesor_zela: Muy buenas tardes, alumnos. Mi nombre es Zela y les daré su primera clase introductoria para aprender Programación.
+Profesor_zela: Primero, empezaremos por definir lo más básico de todo\: ¿Qué es una computadora? Así es, alumnos, hoy hablaremos del concepto básico de lo que es una computadora.
+Profesor_zela: Una computadora es una máquina electrónica capaz de recibir datos de entrada, procesarlos mediante instrucciones específicas y generar datos de salida.
+Profesor_zela: Existen muchos tipos de computadoras, como las supercomputadoras, minicomputadoras, microcomputadoras y computadoras personales.
+Profesor_zela: Nosotros hablaremos de las PC (computadoras personales), las cuales se dividen en dos grandes partes\: el hardware y el software.
+Profesor_zela: El hardware de una computadora es la parte física, la parte que podemos tocar. Está construido en torno a un elemento clave\: el CPU o microprocesador, que es la mente de toda la PC y controla todas sus funciones principales, como la memoria y las operaciones matemáticas.
+Profesor_zela: Además del CPU, otros componentes importantes, aunque no tan centrales como este, son la memoria RAM, la unidad de almacenamiento, la placa base, la fuente de poder y el sistema de enfriamiento.
+Profesor_zela: Para resumirlo\: la RAM se encarga de almacenar y recuperar datos temporales de diferentes programas en ejecución; la unidad de almacenamiento es donde se guardan grandes cantidades de datos que permanecerán allí por mucho tiempo; la placa base se encarga de conectar todos los componentes de la PC y les suministra la energía necesaria para funcionar.
+Profesor_zela: La fuente de poder recibe la energía eléctrica de la corriente y la adecua para alimentar correctamente los componentes de la computadora. El sistema de enfriamiento regula la temperatura de los componentes de la PC, en especial del CPU.
+Profesor_zela: Todo esto es lo básico del hardware de una PC. Ahora hablaremos del software. El software se encarga de darle instrucciones al CPU para que este pueda controlar la PC. Es decir, el software es un conjunto de instrucciones que administran la PC para que esta funcione con fluidez y, además, le permite realizar tareas específicas. Existen dos tipos de software\: software de sistema y software de aplicación.
+Profesor_zela: El software de sistema es aquel que administra y controla el hardware, como por ejemplo el sistema operativo Microsoft Windows. El software de aplicación es aquel con el que se realizan tareas específicas, como por ejemplo un reproductor de video o un videojuego.
+label pregunta1 (pregunta1)
+Profesor_zela: Vamos a ver si recuerdan... ¿Cuál de estos es hardware?
+- Sistema operativo
+	Profesor_zela: No, ese es software.
+	jump Inprimir_nuetro_hola_mundo/pregunta1
+- Paint
+	Profesor_zela: Tampoco. Paint es un software de aplicación.
+	jump Inprimir_nuetro_hola_mundo/pregunta1
+- RAM
+	Profesor_zela: ¡Correcto! La RAM es parte del hardware.
+Profesor_zela: Listo, chicos, con esto ya aprendimos lo fundamental sobre qué es una computadora, pueden salir un rato a su brake.
