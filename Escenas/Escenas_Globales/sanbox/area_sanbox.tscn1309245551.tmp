@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdackrptrbk2r"]
+
+[ext_resource type="Script" uid="uid://p2ribe2ifg62" path="res://Escenas/Escenas_Globales/sanbox/area_sanbox.gd" id="1_583xu"]
+[ext_resource type="PackedScene" uid="uid://brylbyorugoip" path="res://Escenas/Escenas_Globales/esenas_bloques_codigo/objeto_movible.tscn" id="1_xx3tr"]
+
+[node name="Area_sanbox" type="Node2D"]
+script = ExtResource("1_583xu")
+
+[node name="Area_codigo" type="Node2D" parent="."]
+
+[node name="codigo_mobible" type="Node2D" parent="."]
+
+[node name="Objeto_movible" parent="codigo_mobible" instance=ExtResource("1_xx3tr")]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "print"
