@@ -36,6 +36,8 @@ overrides = {}
 script = ExtResource("1_di3pq")
 scene = ExtResource("5_mil8b")
 overrides = {
+"box_margin_bottom": "5.0",
+"box_size": "Vector2(550, 100)",
 "normal_font": "\"res://fuentes_de_letras/AkayaKanadaka-Regular.ttf\""
 }
 
@@ -76,4 +78,4 @@ layer_info = {
 }
 base_overrides = {}
 layers = Array[ExtResource("1_di3pq")]([])
-metadata/_latest_layer = "17"
+metadata/_latest_layer = "13"

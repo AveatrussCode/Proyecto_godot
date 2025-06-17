@@ -1,5 +1,6 @@
 join Profesor_zela left
 Profesor_zela: Muy buenas tardes, alumnos. Mi nombre es Zela y les daré su primera clase introductoria para aprender Programación.
+label inicio
 Profesor_zela: Primero, empezaremos por definir lo más básico de todo\: ¿Qué es una computadora? Así es, alumnos, hoy hablaremos del concepto básico de lo que es una computadora.
 Profesor_zela: Una computadora es una máquina electrónica capaz de recibir datos de entrada, procesarlos mediante instrucciones específicas y generar datos de salida.
 Profesor_zela: Existen muchos tipos de computadoras, como las supercomputadoras, minicomputadoras, microcomputadoras y computadoras personales.
@@ -20,4 +21,24 @@ Profesor_zela: Vamos a ver si recuerdan... ¿Cuál de estos es hardware?
 	jump Inprimir_nuetro_hola_mundo/pregunta1
 - RAM
 	Profesor_zela: ¡Correcto! La RAM es parte del hardware.
+label pregunta 2
+Profesor_zela: Aca les va otra pregunta.¿Que es el sofware?
+- No lo c :(
+	Profesor_zela: *se sorprende*, debes tomar mas atencion a las clases alumno,  menos un punto.
+	jump Inprimir_nuetro_hola_mundo/inicio
+- Es la parte intangible de la computadora.
+	Profesor_zela: Correcto alumno, siguiente pregunta
+- Es la parte física, la parte que podemos tocar.
+	Profesor_zela: Incorrecto alumno, repasemos\:
+	jump Inprimir_nuetro_hola_mundo/inicio
+label pregunta 3
+Profesor_zela: Y la ultima pregunta seria\: ¿Que es el hardware?
+- No lo se
+	Profesor_zela: *se enoja*, volvamos a repasar todo alumnos.
+	jump Inprimir_nuetro_hola_mundo/inicio
+- Es la parte fisica de una computadora, osea la podemos tocar
+	Profesor_zela: Correcto alumno, respondiste todo de manera correcta.
+- Es la parte intangible de la computadora
+	Profesor_zela: incorrecto, ese es el sofware.
+	jump Inprimir_nuetro_hola_mundo/pregunta 3
 Profesor_zela: Listo, chicos, con esto ya aprendimos lo fundamental sobre qué es una computadora, pueden salir un rato a su brake.
