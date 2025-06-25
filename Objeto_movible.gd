@@ -7,7 +7,7 @@ var esta_dentro_del_area_movible = false
 var body_ref
 var offset: Vector2
 var posicion_inicial: Vector2
-
+var copia
 func _process(_delta):  
 	if movible:
 		if Input.is_action_just_pressed("click"):
@@ -42,6 +42,8 @@ func _on_area_2d_mouse_entered() -> void:
 		movible = true
 		var tween = get_tree().create_tween()
 		tween.tween_property(self, "scale", Vector2(1.07, 1.07), 0.1)
+		
+
 
 func _on_area_2d_mouse_exited() -> void:
 	if not GLOBAL.is_dragging:
