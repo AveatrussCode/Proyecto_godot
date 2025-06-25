@@ -1,15 +1,20 @@
 extends Node
-
 var estilos = {
 	"print": {
 		"color": Color.AZURE,
-		"ancho": 220,
-		"alto": 60
+		"ancho": 45,
+		"alto": 25,
+		"text_color": Color.BLACK,
+		"outline_color": Color.DARK_GRAY,
+		"outline_size": 2
 	},
 	"default": {
 		"color": Color.BISQUE,
 		"ancho": 200,
-		"alto": 50
+		"alto": 60,
+		"text_color": Color.DARK_RED,
+		"outline_color": Color.LIGHT_GRAY,
+		"outline_size": 1
 	}
 }
 
@@ -19,8 +24,7 @@ func configurar_bloque(nodo: Node2D) -> void:
 		return
 
 	var label_node: Label = nodo.get_node("Label")
-
-	# 🔍 Usar el texto del Label como base del estilo
+	# Usar el texto del Label como base del estilo
 	var texto := label_node.text.strip_edges().to_lower()
 
 	# 🔧 Buscar estilo por prefijo
@@ -31,11 +35,6 @@ func configurar_bloque(nodo: Node2D) -> void:
 			break
 
 	var estilo: Dictionary = estilos[clave]
-
-	# 🖌 Estilo del texto
-	label_node.add_theme_color_override("font_color", Color.BLACK)
-	label_node.add_theme_color_override("font_outline_color", Color.DARK_GRAY)
-	label_node.add_theme_constant_override("outline_size", 2)
 
 	
 	nodo.modulate = estilo["color"]
@@ -48,4 +47,4 @@ func configurar_bloque(nodo: Node2D) -> void:
 		rect_shape.extents = Vector2(estilo["ancho"] / 2, estilo["alto"] / 2)
 
 	# 🔧 Centrar visualmente el Label
-	label_node.position = Vector2(-estilo["ancho"] / 2 + 10, -10)
+	label_node.position = Vector2(-estilo["ancho"] / 2 + 3, -12)

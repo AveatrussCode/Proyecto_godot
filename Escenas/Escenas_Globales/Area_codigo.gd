@@ -1,40 +1,18 @@
 extends Node2D
 
-const TAM_AREA := Vector2(500, 600)
-const ESPACIADO_HORIZONTAL := 170
-const ESPACIADO_VERTICAL := 90
-const POS_INICIAL := Vector2(100, 10)
+const TAM_AREA := Vector2(500, 360)
+const ESPACIADO_HORIZONTAL := 50
+const ESPACIADO_VERTICAL := 30
+const POS_INICIAL := Vector2(30, 20)
 
 # Cada fila es un array de bloques (Node2D)
 var filas: Array = []  # Contiene Array[Node2D]
 
-func _draw() -> void:
-	draw_rect(Rect2(Vector2.ZERO, TAM_AREA), Color(1, 0, 0, 0.2), true)
 
 func esta_dentro(pos: Vector2) -> bool:
 	var rect_area := Rect2(global_position + POS_INICIAL, TAM_AREA)
 	return rect_area.has_point(pos)
 
-func on_bloque_soltado(bloque: Node2D) -> void:
-	if esta_dentro(bloque.global_position):
-		mover_bloque(bloque)
-	else:
-		eliminar_bloque(bloque)
-
-func mover_bloque(bloque: Node2D) -> void:
-	var fila_anterior: Array = []
-	for fila in filas:
-		if bloque in fila:
-			fila.erase(bloque)
-			fila_anterior = fila
-			break
-
-	filas = filas.filter(func(f): return f.size() > 0)
-
-	if fila_anterior.size() > 0:
-		ordenar_fila(fila_anterior)
-
-	agregar_bloque(bloque)
 
 func agregar_bloque(bloque: Node2D) -> void:
 	if not bloque.get_parent():
