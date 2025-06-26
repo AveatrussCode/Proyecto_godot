@@ -15,43 +15,55 @@ func esta_dentro(pos: Vector2) -> bool:
 
 
 func agregar_bloque(bloque: Node2D) -> void:
+	# Si no tiene padre, lo añadimos al área
 	if not bloque.get_parent():
 		add_child(bloque)
 
-	var y := bloque.global_position.y
-	var fila_objetivo = obtener_fila_mas_cercana(y)
+	# Quitar si ya estaba
+	quitar_bloque_si_ya_estaba(bloque)
 
-	if fila_objetivo == null:
-		var nueva_fila: Array = []
-		filas.append(nueva_fila)
-		fila_objetivo = nueva_fila
+	# Buscar fila más cercana
+	var y = bloque.global_position.y
+	var fila = obtener_fila_mas_cercana(y)
+	if fila == null:
+		fila = []
+		filas.append(fila)
 
-	var insertado := false
-	for i in range(fila_objetivo.size()):
-		var otro = fila_objetivo[i]
-		if is_instance_valid(otro) and bloque.global_position.x < otro.global_position.x:
-			fila_objetivo.insert(i, bloque)
-			insertado = true
-			break
+	# Calcular posición horizontal adecuada
+	var index = obtener_posicion_horizontal(fila, bloque)
 
-	if not insertado:
-		fila_objetivo.append(bloque)
+	# Insertar y reacomodar
+	insertar_en_fila(fila, bloque, index)
 
-	ordenar_fila(fila_objetivo)
-
-func ordenar_fila(fila: Array) -> void:
-	fila = fila.filter(func(b): return is_instance_valid(b))
-	if fila.size() == 0:
-		return
-
-	var index: int = filas.find(fila)
-	var y_fila: float = POS_INICIAL.y + index * ESPACIADO_VERTICAL
+func insertar_en_fila(fila: Array, bloque: Node2D, indice: int) -> void:
+	fila.insert(indice, bloque)
 
 	for i in range(fila.size()):
-		var destino: Vector2 = Vector2(POS_INICIAL.x + i * ESPACIADO_HORIZONTAL, y_fila)
-		var tween: Tween = get_tree().create_tween()
+		if not is_instance_valid(fila[i]):
+			continue
+		var destino = POS_INICIAL + Vector2(i * ESPACIADO_HORIZONTAL, filas.find(fila) * ESPACIADO_VERTICAL)
+		var tween = get_tree().create_tween()
 		tween.tween_property(fila[i], "position", destino, 0.15)
-
+func obtener_posicion_horizontal(fila: Array, bloque: Node2D) -> int:
+	var x = bloque.global_position.x
+	for i in range(fila.size()):
+		var b = fila[i]
+		if is_instance_valid(b) and x < b.global_position.x:
+			return i
+	return fila.size()  # al final
+func quitar_bloque_si_ya_estaba(bloque: Node2D) -> void:
+	for fila in filas:
+		if bloque in fila:
+			var idx = fila.find(bloque)
+			fila.erase(bloque)
+			if fila.size() > idx:
+				for i in range(idx, fila.size()):
+					var destino = POS_INICIAL + Vector2(i * ESPACIADO_HORIZONTAL, filas.find(fila) * ESPACIADO_VERTICAL)
+					var tween = get_tree().create_tween()
+					tween.tween_property(fila[i], "position", destino, 0.15)
+			break
+	# Limpiar filas vacías
+	filas = filas.filter(func(f): return f.size() > 0)
 func obtener_fila_mas_cercana(y_pos: float):
 	var tolerancia: float = ESPACIADO_VERTICAL / 2
 
@@ -74,11 +86,3 @@ func obtener_fila_mas_cercana(y_pos: float):
 			return fila
 
 	return null
-
-func eliminar_bloque(bloque: Node2D) -> void:
-	for fila in filas:
-		if bloque in fila:
-			fila.erase(bloque)
-			break
-	filas = filas.filter(func(f): return f.size() > 0)
-	bloque.queue_free()
