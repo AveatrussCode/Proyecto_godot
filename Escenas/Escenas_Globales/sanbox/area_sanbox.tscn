@@ -163,14 +163,14 @@ script = ExtResource("2_n1fr2")
 [node name="codigo_mobible" type="Node2D" parent="."]
 
 [node name="objeto" parent="codigo_mobible" instance=ExtResource("1_xx3tr")]
-position = Vector2(582, 191)
+position = Vector2(578, 154)
 
 [node name="Label" type="Label" parent="codigo_mobible/objeto"]
 offset_left = -20.0
 offset_top = -11.0
 offset_right = 20.0
 offset_bottom = 12.0
-text = "hola"
+text = "\"hola\""
 metadata/_edit_use_anchors_ = true
 
 [node name="objeto2" parent="codigo_mobible" instance=ExtResource("1_xx3tr")]
@@ -181,7 +181,7 @@ offset_left = -16.0
 offset_top = -16.0
 offset_right = 24.0
 offset_bottom = 7.0
-text = "print"
+text = "if"
 metadata/_edit_use_anchors_ = true
 
 [node name="objeto3" parent="codigo_mobible" instance=ExtResource("1_xx3tr")]
@@ -190,9 +190,9 @@ position = Vector2(576, 120)
 [node name="Label" type="Label" parent="codigo_mobible/objeto3"]
 offset_left = -16.0
 offset_top = -16.0
-offset_right = 24.0
+offset_right = 26.0
 offset_bottom = 7.0
-text = "print"
+text = "while"
 metadata/_edit_use_anchors_ = true
 
 [node name="objeto4" parent="codigo_mobible" instance=ExtResource("1_xx3tr")]
@@ -204,4 +204,48 @@ offset_top = -13.0
 offset_right = 21.0
 offset_bottom = 10.0
 text = "print"
+metadata/_edit_use_anchors_ = true
+
+[node name="objeto5" parent="codigo_mobible" instance=ExtResource("1_xx3tr")]
+position = Vector2(576, 192)
+
+[node name="Label" type="Label" parent="codigo_mobible/objeto5"]
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 24.0
+offset_bottom = 7.0
+text = "for"
+metadata/_edit_use_anchors_ = true
+
+[node name="objeto6" parent="codigo_mobible" instance=ExtResource("1_xx3tr")]
+position = Vector2(576, 224)
+
+[node name="Label" type="Label" parent="codigo_mobible/objeto6"]
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 24.0
+offset_bottom = 7.0
+text = "tab"
+metadata/_edit_use_anchors_ = true
+
+[node name="objeto7" parent="codigo_mobible" instance=ExtResource("1_xx3tr")]
+position = Vector2(576, 256)
+
+[node name="Label" type="Label" parent="codigo_mobible/objeto7"]
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 24.0
+offset_bottom = 7.0
+text = "("
+metadata/_edit_use_anchors_ = true
+
+[node name="objeto8" parent="codigo_mobible" instance=ExtResource("1_xx3tr")]
+position = Vector2(576, 296)
+
+[node name="Label" type="Label" parent="codigo_mobible/objeto8"]
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 24.0
+offset_bottom = 7.0
+text = ") "
 metadata/_edit_use_anchors_ = true

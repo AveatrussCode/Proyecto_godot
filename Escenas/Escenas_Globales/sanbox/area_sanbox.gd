@@ -1,8 +1,10 @@
 extends Node2D
 
 func _ready():
+	call_deferred("_configurar_bloques")
+
+func _configurar_bloques():
 	print("📍 Ruta completa de este nodo:", get_path())
-	print("🗂 Árbol raíz:", get_tree().get_root().get_path())
 	print("▶️ Buscando bloques...")
 	for bloque in $codigo_mobible.get_children():
 		print("🔍 Revisando bloque:", bloque.name)
