@@ -86,3 +86,18 @@ func obtener_fila_mas_cercana(y_pos: float):
 			return fila
 
 	return null
+	
+func parsear_codigo() -> Array:
+	var tokens: Array = []
+
+	for fila in filas:
+		for bloque in fila:
+			if not is_instance_valid(bloque):
+				continue
+
+			if bloque.has_node("Label"):
+				var label_node: Label = bloque.get_node("Label")
+				var texto: String = label_node.text.strip_edges()
+				tokens.append(texto)
+	
+	return tokens

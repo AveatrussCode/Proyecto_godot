@@ -18,3 +18,38 @@ func _soltar_bloque(bloque: Node2D) -> void:
 	else:
 		print("❌ Fuera del área, se elimina")
 		bloque.queue_free()
+
+func interpretar(tokens: Array) -> void:
+	var i = 0
+	while i < tokens.size():
+		var token = tokens[i]
+
+		match token.to_lower():
+			"print":
+				i += 1
+				if i < tokens.size() and tokens[i] == "(":
+					i += 1
+					var argumento = ""
+					while i < tokens.size() and tokens[i] != ")":
+						argumento += tokens[i] + " "
+						i += 1
+					argumento = argumento.strip_edges()
+					
+					if i < tokens.size() and tokens[i] == ")":
+						print("🖨️ Ejecutando: print(", argumento, ")")
+					else:
+						print("❌ Error: falta cierre de ) después de print")
+				else:
+					print("❌ Error: se esperaba ( después de print")
+			
+			_:
+				print("❓ Token desconocido o inesperado:", token)
+		
+		i += 1
+
+		
+func _input(event):
+	if event.is_action_pressed("ui_accept"):  # Por defecto, "Espacio"
+		var tokens = $Area_codigo.parsear_codigo()
+		print("🧱 Tokens detectados:", tokens) 
+		interpretar(tokens)
