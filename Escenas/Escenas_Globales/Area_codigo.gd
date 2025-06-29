@@ -3,7 +3,7 @@ extends Node2D
 const TAM_AREA := Vector2(500, 360)
 const ESPACIADO_HORIZONTAL := 50
 const ESPACIADO_VERTICAL := 30
-const POS_INICIAL := Vector2(30, 20)
+const POS_INICIAL := Vector2(60, 50)
 
 # Cada fila es un array de bloques (Node2D)
 var filas: Array = []  # Contiene Array[Node2D]
