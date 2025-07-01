@@ -32,9 +32,9 @@ var estilos = {
 		"outline_color": Color.LIGHT_GRAY,
 		"outline_size": 1
 	},
-	"tab":{
+	"_tab_":{
 		"color": Color.AZURE,
-		"ancho": 30,
+		"ancho": 50,
 		"alto": 25,
 		"text_color": Color.DARK_RED,
 		"outline_color": Color.LIGHT_GRAY,
@@ -42,7 +42,7 @@ var estilos = {
 	},
 	"(" :{
 		"color": Color.AZURE,
-		"ancho": 10,
+		"ancho": 15,
 		"alto": 25,
 		"text_color": Color.DARK_RED,
 		"outline_color": Color.LIGHT_GRAY,
@@ -50,7 +50,7 @@ var estilos = {
 	},
 	")" :{
 		"color": Color.AZURE,
-		"ancho": 10,
+		"ancho": 15,
 		"alto": 25,
 		"text_color": Color.DARK_RED,
 		"outline_color": Color.LIGHT_GRAY,
