@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1fkepxqf0cq5"
-path="res://.godot/imported/posicion 1.png-bd81db0e6501c8dcdfc107e4039d3432.ctex"
+uid="uid://cny8rta6yei63"
+path="res://.godot/imported/profesor_pose_1.png-eff8be28b1c5f7d75ef17f7ea7547cde.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Personajes/Profesor_(NPC)/posicion 1.png"
-dest_files=["res://.godot/imported/posicion 1.png-bd81db0e6501c8dcdfc107e4039d3432.ctex"]
+source_file="res://Personajes/Profesor_(NPC)/profesor_pose_1.png"
+dest_files=["res://.godot/imported/profesor_pose_1.png-eff8be28b1c5f7d75ef17f7ea7547cde.ctex"]
 
 [params]
 
