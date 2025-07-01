@@ -1,5 +1,6 @@
 join Profesor_zela left
-Profesor_zela: Muy buenas tardes, alumnos. Mi nombre es Zela y les daré su primera clase introductoria para aprender Programación.
+[voice path="res://Sonidos/voices/Clase1_1.ogg" volume="0.0"]
+Profesor_zela: Muy buenas tardes, alumnos. Soy el profesor Eduardo Zela y les daré su primera clase introductoria para aprender Programación.
 label inicio
 Profesor_zela: Primero, empezaremos por definir lo más básico de todo\: ¿Qué es una computadora? Así es, alumnos, hoy hablaremos del concepto básico de lo que es una computadora.
 Profesor_zela: Una computadora es una máquina electrónica capaz de recibir datos de entrada, procesarlos mediante instrucciones específicas y generar datos de salida.
