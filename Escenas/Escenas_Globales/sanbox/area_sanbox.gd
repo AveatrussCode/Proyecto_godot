@@ -54,3 +54,8 @@ func _input(event):
 		var tokens = $Area_codigo.parsear_codigo()
 		print("🧱 Tokens detectados:", tokens) 
 		interpretar(tokens)
+
+
+func _on_option_button_item_selected(index: int) -> void:
+	var valor = $OptionButton.get_item_text(index)
+	$Label.text = valor  

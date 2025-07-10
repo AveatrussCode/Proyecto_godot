@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bdackrptrbk2r"]
+[gd_scene load_steps=17 format=3 uid="uid://bdackrptrbk2r"]
 
 [ext_resource type="Script" uid="uid://p2ribe2ifg62" path="res://Escenas/Escenas_Globales/sanbox/area_sanbox.gd" id="1_583xu"]
 [ext_resource type="PackedScene" uid="uid://brylbyorugoip" path="res://Escenas/Escenas_Globales/esenas_bloques_codigo/objeto_movible.tscn" id="1_xx3tr"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cf00xp128tmv1" path="res://Imagenes/assets_codigo/fonfo_codigo_f.png" id="2_ty7e7"]
 [ext_resource type="Texture2D" uid="uid://b4hwdvcrdm057" path="res://Imagenes/assets_codigo/pc2.png" id="2_x1rnt"]
 [ext_resource type="Script" uid="uid://d2fix7cobf8xo" path="res://Escenas/Escenas_Globales/sanbox/codigo_mobible.gd" id="4_23tyh"]
+[ext_resource type="Texture2D" uid="uid://beqgi08hdgtfv" path="res://Imagenes/assets_de_botones/flecha.png" id="7_gw4xv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_23tyh"]
 bg_color = Color(0.839216, 0.6, 0.0980392, 1)
@@ -42,6 +43,17 @@ corner_radius_top_left = 4
 corner_radius_top_right = 4
 corner_radius_bottom_right = 4
 corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6njh0"]
+texture = ExtResource("7_gw4xv")
+modulate_color = Color(0.898514, 0.5599, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gw4xv"]
+texture = ExtResource("7_gw4xv")
+modulate_color = Color(0.758551, 0.500151, 0.0482149, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hhnfm"]
+texture = ExtResource("7_gw4xv")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ty7e7"]
 bg_color = Color(0.0431373, 0.176471, 0.215686, 1)
@@ -210,6 +222,30 @@ text = "x"
 horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
 
+[node name="OptionButton" type="OptionButton" parent="codigo_mobible/objeto9"]
+offset_left = 84.0
+offset_top = -38.0
+offset_right = 126.0
+offset_bottom = -7.0
+selected = 10
+item_count = 3
+popup/item_0/text = "a"
+popup/item_0/id = 0
+popup/item_1/text = "b"
+popup/item_1/id = 1
+popup/item_2/text = "c"
+popup/item_2/id = 2
+
+[node name="Button" type="Button" parent="codigo_mobible/objeto9"]
+offset_left = 10.0
+offset_top = -11.0
+offset_right = 23.0
+offset_bottom = 10.0
+theme_override_font_sizes/font_size = 8
+theme_override_styles/hover = SubResource("StyleBoxTexture_6njh0")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_gw4xv")
+theme_override_styles/normal = SubResource("StyleBoxTexture_hhnfm")
+
 [node name="objeto10" parent="codigo_mobible" instance=ExtResource("1_xx3tr")]
 position = Vector2(592, 320)
 
@@ -328,10 +364,10 @@ horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect15" type="ColorRect" parent="."]
-offset_left = 549.0
-offset_top = 303.0
-offset_right = 640.0
-offset_bottom = 364.0
+offset_left = 601.0
+offset_top = 324.0
+offset_right = 692.0
+offset_bottom = 385.0
 mouse_filter = 2
 color = Color(0, 0.00392157, 0.0862745, 1)
 
@@ -344,10 +380,12 @@ mouse_filter = 2
 color = Color(0, 0.00392157, 0.0862745, 1)
 
 [node name="Button" type="Button" parent="."]
-offset_left = 555.0
-offset_top = 313.0
-offset_right = 624.0
-offset_bottom = 341.0
+offset_left = 698.0
+offset_top = 291.0
+offset_right = 767.0
+offset_bottom = 319.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_ty7e7")
 text = "RUM"
+
+[connection signal="item_selected" from="codigo_mobible/objeto9/OptionButton" to="." method="_on_option_button_item_selected"]

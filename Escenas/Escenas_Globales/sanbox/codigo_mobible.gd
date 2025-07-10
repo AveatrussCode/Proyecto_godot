@@ -21,3 +21,5 @@ func mover_bloques(delta: Vector2):
 	elif nueva_pos.y < limite_inferior:
 		nueva_pos.y = limite_inferior
 	contenedor_bloques.position = nueva_pos
+
+	
