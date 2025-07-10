@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://bdackrptrbk2r"]
+[gd_scene load_steps=13 format=3 uid="uid://bdackrptrbk2r"]
 
 [ext_resource type="Script" uid="uid://p2ribe2ifg62" path="res://Escenas/Escenas_Globales/sanbox/area_sanbox.gd" id="1_583xu"]
 [ext_resource type="PackedScene" uid="uid://brylbyorugoip" path="res://Escenas/Escenas_Globales/esenas_bloques_codigo/objeto_movible.tscn" id="1_xx3tr"]
 [ext_resource type="Script" uid="uid://868h4gerk4so" path="res://Escenas/Escenas_Globales/Area_codigo.gd" id="2_n1fr2"]
 [ext_resource type="Texture2D" uid="uid://cf00xp128tmv1" path="res://Imagenes/assets_codigo/fonfo_codigo_f.png" id="2_ty7e7"]
+[ext_resource type="Texture2D" uid="uid://b4hwdvcrdm057" path="res://Imagenes/assets_codigo/pc2.png" id="2_x1rnt"]
 [ext_resource type="Script" uid="uid://d2fix7cobf8xo" path="res://Escenas/Escenas_Globales/sanbox/codigo_mobible.gd" id="4_23tyh"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_23tyh"]
@@ -64,6 +65,10 @@ offset_bottom = 360.0
 mouse_filter = 2
 color = Color(0, 0.00392157, 0.0862745, 1)
 
+[node name="Pc2" type="Sprite2D" parent="."]
+position = Vector2(268, 149)
+texture = ExtResource("2_x1rnt")
+
 [node name="FonfoCodigoF" type="Sprite2D" parent="."]
 position = Vector2(268.25, 140)
 scale = Vector2(0.673718, 0.595556)
@@ -89,71 +94,6 @@ offset_left = 29.0
 offset_top = 29.0
 offset_right = 69.0
 offset_bottom = 69.0
-
-[node name="ColorRect2" type="ColorRect" parent="Control"]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.025
-anchor_right = 9.925
-anchor_bottom = 0.0375
-offset_left = 7.0
-offset_top = 7.0
-offset_right = 57.0
-offset_bottom = 32.5
-mouse_filter = 2
-metadata/_edit_use_anchors_ = true
-
-[node name="ColorRect3" type="ColorRect" parent="Control"]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 10.45
-anchor_bottom = 0.0125
-offset_left = 7.0
-offset_top = 37.0
-offset_right = 57.0
-offset_bottom = 62.5
-mouse_filter = 2
-metadata/_edit_use_anchors_ = true
-
-[node name="ColorRect4" type="ColorRect" parent="Control"]
-layout_mode = 0
-offset_left = 7.0
-offset_top = 67.0
-offset_right = 475.0
-offset_bottom = 93.0
-mouse_filter = 2
-
-[node name="ColorRect5" type="ColorRect" parent="Control"]
-layout_mode = 0
-offset_left = 7.0
-offset_top = 97.0
-offset_right = 475.0
-offset_bottom = 123.0
-mouse_filter = 2
-
-[node name="ColorRect6" type="ColorRect" parent="Control"]
-layout_mode = 0
-offset_left = 7.0
-offset_top = 127.0
-offset_right = 475.0
-offset_bottom = 153.0
-mouse_filter = 2
-
-[node name="ColorRect7" type="ColorRect" parent="Control"]
-layout_mode = 0
-offset_left = 7.0
-offset_top = 157.0
-offset_right = 475.0
-offset_bottom = 183.0
-mouse_filter = 2
-
-[node name="ColorRect8" type="ColorRect" parent="Control"]
-layout_mode = 0
-offset_left = 67.0
-offset_top = 187.0
-offset_right = 475.0
-offset_bottom = 213.0
-mouse_filter = 2
 
 [node name="Area_codigo" type="Node2D" parent="."]
 script = ExtResource("2_n1fr2")
