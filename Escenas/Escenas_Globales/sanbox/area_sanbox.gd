@@ -1,6 +1,7 @@
 extends Node2D
 
 func _ready():
+	GLOBAL.create_transition(self,1)
 	call_deferred("_configurar_bloques")
 
 func _configurar_bloques():

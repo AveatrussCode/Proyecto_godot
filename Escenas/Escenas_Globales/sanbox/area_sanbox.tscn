@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://bdackrptrbk2r"]
+[gd_scene load_steps=12 format=3 uid="uid://bdackrptrbk2r"]
 
 [ext_resource type="Script" uid="uid://p2ribe2ifg62" path="res://Escenas/Escenas_Globales/sanbox/area_sanbox.gd" id="1_583xu"]
 [ext_resource type="PackedScene" uid="uid://brylbyorugoip" path="res://Escenas/Escenas_Globales/esenas_bloques_codigo/objeto_movible.tscn" id="1_xx3tr"]
 [ext_resource type="Script" uid="uid://868h4gerk4so" path="res://Escenas/Escenas_Globales/Area_codigo.gd" id="2_n1fr2"]
 [ext_resource type="Texture2D" uid="uid://cf00xp128tmv1" path="res://Imagenes/assets_codigo/fonfo_codigo_f.png" id="2_ty7e7"]
+[ext_resource type="Script" uid="uid://d2fix7cobf8xo" path="res://Escenas/Escenas_Globales/sanbox/codigo_mobible.gd" id="4_23tyh"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_23tyh"]
 bg_color = Color(0.839216, 0.6, 0.0980392, 1)
@@ -68,18 +69,18 @@ position = Vector2(268.25, 140)
 scale = Vector2(0.673718, 0.595556)
 texture = ExtResource("2_ty7e7")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = 546.0
-offset_top = 8.0
-offset_right = 635.0
-offset_bottom = 305.0
-mouse_filter = 2
-color = Color(0.0431373, 0.176471, 0.215686, 1)
-
 [node name="FonfoCodigoF2" type="Sprite2D" parent="."]
 position = Vector2(269, 317.5)
 scale = Vector2(0.676923, 0.166667)
 texture = ExtResource("2_ty7e7")
+
+[node name="ColorRect" type="ColorRect" parent="FonfoCodigoF2"]
+offset_left = 409.0
+offset_top = -1857.0
+offset_right = 533.0
+offset_bottom = -135.0
+mouse_filter = 2
+color = Color(0.0431373, 0.176471, 0.215686, 1)
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -158,6 +159,7 @@ mouse_filter = 2
 script = ExtResource("2_n1fr2")
 
 [node name="codigo_mobible" type="Node2D" parent="."]
+script = ExtResource("4_23tyh")
 
 [node name="objeto" parent="codigo_mobible" instance=ExtResource("1_xx3tr")]
 position = Vector2(592, 128)

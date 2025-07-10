@@ -1,14 +1,12 @@
 extends Node2D
 
-const TAM_AREA := Vector2(500, 360)
+const TAM_AREA := Vector2(500, 380)
 const ESPACIADO_HORIZONTAL := 50
 const ESPACIADO_VERTICAL := 30
-const POS_INICIAL := Vector2(60, 50)
+const POS_INICIAL := Vector2(60, 30)
 
 # Cada fila es un array de bloques (Node2D)
 var filas: Array = []  # Contiene Array[Node2D]
-
-
 func esta_dentro(pos: Vector2) -> bool:
 	var rect_area := Rect2(global_position + POS_INICIAL, TAM_AREA)
 	return rect_area.has_point(pos)
@@ -28,6 +26,7 @@ func agregar_bloque(bloque: Node2D) -> void:
 	if fila == null:
 		fila = []
 		filas.append(fila)
+		
 
 	# Calcular posición horizontal adecuada
 	var index = obtener_posicion_horizontal(fila, bloque)
@@ -37,13 +36,17 @@ func agregar_bloque(bloque: Node2D) -> void:
 
 func insertar_en_fila(fila: Array, bloque: Node2D, indice: int) -> void:
 	fila.insert(indice, bloque)
-
 	for i in range(fila.size()):
 		if not is_instance_valid(fila[i]):
 			continue
 		var destino = POS_INICIAL + Vector2(i * ESPACIADO_HORIZONTAL, filas.find(fila) * ESPACIADO_VERTICAL)
 		var tween = get_tree().create_tween()
 		tween.tween_property(fila[i], "position", destino, 0.15)
+	var bloque_a_mover_a_area_codigo = bloque
+	bloque.get_parent().remove_child(bloque)
+	$".".add_child(bloque_a_mover_a_area_codigo)
+	
+	
 func obtener_posicion_horizontal(fila: Array, bloque: Node2D) -> int:
 	var x = bloque.global_position.x
 	for i in range(fila.size()):

@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://b6ib0qqmab0du"]
 
-[ext_resource type="Script" path="res://Escenas/Escenarios_Mapas/clase_computacion.gd" id="1_4um33"]
+[ext_resource type="Script" uid="uid://cavsgmth8qerh" path="res://Escenas/Escenarios_Mapas/clase_computacion.gd" id="1_4um33"]
 [ext_resource type="Texture2D" uid="uid://bhdi6klvf71km" path="res://Imagenes/tile_map_mapa/aula.png" id="1_71d75"]
 [ext_resource type="PackedScene" uid="uid://xggenndnewjo" path="res://Personajes/Jugador/protagonista.tscn" id="2_fcphl"]
-[ext_resource type="Script" path="res://Escenas/Escenarios_Mapas/acceso_a_la_clase_al_precionar.gd" id="3_71d75"]
+[ext_resource type="Script" uid="uid://dtfrli07sqs57" path="res://Escenas/Escenarios_Mapas/acceso_a_la_clase_al_precionar.gd" id="3_71d75"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fcphl"]
 size = Vector2(166, 35)
