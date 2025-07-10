@@ -42,15 +42,15 @@ var estilos = {
 	},
 	"(" :{
 		"color": Color.AZURE,
-		"ancho": 15,
+		"ancho": 19,
 		"alto": 25,
 		"text_color": Color.DARK_RED,
 		"outline_color": Color.LIGHT_GRAY,
 		"outline_size": 1
 	},
-	")" :{
+	"==" :{
 		"color": Color.AZURE,
-		"ancho": 15,
+		"ancho": 30,
 		"alto": 25,
 		"text_color": Color.DARK_RED,
 		"outline_color": Color.LIGHT_GRAY,
@@ -64,13 +64,13 @@ var estilos = {
 		"outline_color": Color.LIGHT_GRAY,
 		"outline_size": 1
 	},
-	"default": {
-		"color": Color.BISQUE,
-		"ancho": 4,
+	"default": { 
+		"color": Color.AZURE,
+		"ancho": 15,
 		"alto": 25,
 		"text_color": Color.DARK_RED,
 		"outline_color": Color.LIGHT_GRAY,
-		"outline_size": 1
+		"outline_size": 1 
 	}
 }
 
