@@ -6,6 +6,8 @@ func _ready():
 	$Label.hide()
 
 func cambio_escena() ->void:
+	GLOBAL.return_position = get_node("/root/Clase_computacion/Protagonista").global_position
+	
 	GLOBAL.create_transition(self,2)
 	await get_tree().create_timer(1).timeout
 	get_tree().change_scene_to_file("res://Escenas/Plan_de_Estudio/Primer_Semestre/clase_01/clase_0.tscn")
@@ -21,3 +23,4 @@ func _on_body_exited(body: Node2D) -> void:
 	if body.name == "Protagonista":
 		player_is_near = false
 		$Label.hide()
+		
