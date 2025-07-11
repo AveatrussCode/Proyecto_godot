@@ -64,6 +64,7 @@ func quitar_bloque_si_ya_estaba(bloque: Node2D) -> void:
 					var destino = POS_INICIAL + Vector2(i * ESPACIADO_HORIZONTAL, filas.find(fila) * ESPACIADO_VERTICAL)
 					var tween = get_tree().create_tween()
 					tween.tween_property(fila[i], "position", destino, 0.15)
+
 			break
 	# Limpiar filas vacías
 	filas = filas.filter(func(f): return f.size() > 0)
