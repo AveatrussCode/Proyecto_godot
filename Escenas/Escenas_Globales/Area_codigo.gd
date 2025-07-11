@@ -13,26 +13,29 @@ func esta_dentro(pos: Vector2) -> bool:
 
 
 func agregar_bloque(bloque: Node2D) -> void:
-	# Si no tiene padre, lo añadimos al área
-	if not bloque.get_parent():
+	if bloque.get_parent() != self:
+		var pos_global = bloque.global_position
+		bloque.get_parent().remove_child(bloque)
 		add_child(bloque)
+		bloque.global_position = pos_global
 
-	# Quitar si ya estaba
+	# 🔥 Siempre quitar de la fila actual antes de moverlo
 	quitar_bloque_si_ya_estaba(bloque)
 
-	# Buscar fila más cercana
+	# Buscar fila más cercana o crear nueva
 	var y = bloque.global_position.y
 	var fila = obtener_fila_mas_cercana(y)
 	if fila == null:
 		fila = []
 		filas.append(fila)
-		
 
-	# Calcular posición horizontal adecuada
+	# Insertar en posición horizontal
 	var index = obtener_posicion_horizontal(fila, bloque)
+	fila.insert(index, bloque)
 
-	# Insertar y reacomodar
-	insertar_en_fila(fila, bloque, index)
+	# ✅ Ahora, reacomoda TODAS las filas correctamente
+	reacomodar_todas_las_filas()
+
 
 func insertar_en_fila(fila: Array, bloque: Node2D, indice: int) -> void:
 	fila.insert(indice, bloque)
@@ -46,7 +49,6 @@ func insertar_en_fila(fila: Array, bloque: Node2D, indice: int) -> void:
 	bloque.get_parent().remove_child(bloque)
 	$".".add_child(bloque_a_mover_a_area_codigo)
 	
-	
 func obtener_posicion_horizontal(fila: Array, bloque: Node2D) -> int:
 	var x = bloque.global_position.x
 	for i in range(fila.size()):
@@ -57,17 +59,22 @@ func obtener_posicion_horizontal(fila: Array, bloque: Node2D) -> int:
 func quitar_bloque_si_ya_estaba(bloque: Node2D) -> void:
 	for fila in filas:
 		if bloque in fila:
-			var idx = fila.find(bloque)
 			fila.erase(bloque)
-			if fila.size() > idx:
-				for i in range(idx, fila.size()):
-					var destino = POS_INICIAL + Vector2(i * ESPACIADO_HORIZONTAL, filas.find(fila) * ESPACIADO_VERTICAL)
-					var tween = get_tree().create_tween()
-					tween.tween_property(fila[i], "position", destino, 0.15)
-
 			break
 	# Limpiar filas vacías
 	filas = filas.filter(func(f): return f.size() > 0)
+
+func reacomodar_todas_las_filas() -> void:
+	for i in range(filas.size()):
+		var fila = filas[i]
+		for j in range(fila.size()):
+			var bloque = fila[j]
+			if is_instance_valid(bloque):
+				var destino = POS_INICIAL + Vector2(j * ESPACIADO_HORIZONTAL, i * ESPACIADO_VERTICAL)
+				var tween = get_tree().create_tween()
+				tween.tween_property(bloque, "position", destino, 0.15)
+				
+
 func obtener_fila_mas_cercana(y_pos: float):
 	var tolerancia: float = ESPACIADO_VERTICAL / 2
 
