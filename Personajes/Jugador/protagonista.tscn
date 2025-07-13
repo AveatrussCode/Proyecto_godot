@@ -1,56 +1,121 @@
-[gd_scene load_steps=8 format=3 uid="uid://xggenndnewjo"]
+[gd_scene load_steps=10 format=3 uid="uid://xggenndnewjo"]
 
 [ext_resource type="Script" uid="uid://bwoc68ma7smee" path="res://Personajes/Jugador/protagonista.gd" id="1_kv6xp"]
-[ext_resource type="Texture2D" uid="uid://bfrrhsjjt4d42" path="res://Personajes/Jugador/Imagenes/atras.png" id="1_qhvmy"]
-[ext_resource type="Texture2D" uid="uid://d1o3ql5py0nvr" path="res://Personajes/Jugador/Imagenes/adelante.png" id="2_40nvw"]
-[ext_resource type="Texture2D" uid="uid://d22uxjw724b1g" path="res://Personajes/Jugador/Imagenes/derecha.png" id="4_m870a"]
-[ext_resource type="Texture2D" uid="uid://ykg0r35hnvmd" path="res://Personajes/Jugador/Imagenes/izquieda.png" id="5_lpmik"]
+[ext_resource type="Texture2D" uid="uid://mxixhjicysb" path="res://Personajes/Jugador/Imagenes/protagonista1.png" id="2_ncrts"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_bhhrs"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_qhvmy")
-}],
-"loop": true,
-"name": &"abajo",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_40nvw")
-}],
-"loop": true,
-"name": &"arriba",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("4_m870a")
-}],
-"loop": true,
-"name": &"derecha",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("5_lpmik")
-}],
-"loop": true,
-"name": &"izquierda",
-"speed": 5.0
-}]
+[sub_resource type="Animation" id="Animation_qqywu"]
+resource_name = "caminar_abajo"
+length = 0.8
+loop_mode = 1
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(1, 0), Vector2i(2, 0), Vector2i(3, 0), Vector2i(0, 0)]
+}
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_x0hug"]
-size = Vector2(12, 40)
+[sub_resource type="Animation" id="Animation_cbw5x"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2i(1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_kv6xp"]
+resource_name = "caminar_arriba"
+length = 0.8
+loop_mode = 1
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(1, 1), Vector2i(2, 1), Vector2i(3, 1), Vector2i(0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_40nvw"]
+resource_name = "caminar_derecha"
+length = 0.8
+loop_mode = 1
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(1, 2), Vector2i(2, 2), Vector2i(3, 2), Vector2i(0, 2)]
+}
+
+[sub_resource type="Animation" id="Animation_m870a"]
+resource_name = "caminar_izquierda"
+length = 0.8
+loop_mode = 1
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(1, 3), Vector2i(2, 3), Vector2i(3, 3), Vector2i(0, 3)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lpmik"]
+_data = {
+&"RESET": SubResource("Animation_cbw5x"),
+&"caminar_abajo": SubResource("Animation_qqywu"),
+&"caminar_arriba": SubResource("Animation_kv6xp"),
+&"caminar_derecha": SubResource("Animation_40nvw"),
+&"caminar_izquierda": SubResource("Animation_m870a")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ncrts"]
+size = Vector2(9, 10)
 
 [node name="Protagonista" type="CharacterBody2D"]
 script = ExtResource("1_kv6xp")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_bhhrs")
-animation = &"arriba"
-frame_progress = 0.46436
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ncrts")
+hframes = 5
+vframes = 4
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_lpmik")
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_x0hug")
+position = Vector2(0.5, 10)
+shape = SubResource("RectangleShape2D_ncrts")
