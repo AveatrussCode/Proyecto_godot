@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://drw8yv12jufes"]
+
+[ext_resource type="Script" uid="uid://d3axggx4s1cav" path="res://Plan_de_Estudio/Primer_Semestre/clase_03/clase_3_2.gd" id="1_0fo83"]
+[ext_resource type="Texture2D" uid="uid://j2rgyvbg60p0" path="res://Imagenes/tile_map_mapa/background_pizarra.png" id="1_vesif"]
+
+[node name="clase_3_2" type="Node2D"]
+script = ExtResource("1_0fo83")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(320, 180)
+scale = Vector2(1.77778, 2)
+texture = ExtResource("1_vesif")
