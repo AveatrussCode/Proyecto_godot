@@ -16,8 +16,7 @@ func cambio_escena() ->void:
 func _process(delta):
 	if player_is_near and Input.is_action_just_pressed("ui_accept"):
 		cambio_escena()
-
-
+		
 
 
 func handleInput(delta):
