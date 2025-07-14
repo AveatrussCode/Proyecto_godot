@@ -1,21 +1,21 @@
 join mohammed right
 mohammed: Muy buenos días, chicos. El día de hoy responderemos a la siguiente pregunta\: ¿Qué son los paradigmas de la programación?
 Primero debemos saber que no existe un solo modo de escribir un programa. A lo largo del tiempo se han desarrollado distintas formas de organizar y estructurar el código.\
- A esto se le llama paradigma de la programación.
+A esto se le llama paradigma de la programación.
 Existen muchos tipos de paradigmas, pero hoy hablaremos de los más importantes y utilizados.
 En esta clase nos enfocaremos en cuatro paradigmas fundamentales\: El paradigma imperativo, el paradigma procedimental, el paradigma orientado a objetos y el paradigma funcional.
 El paradigma imperativo es cuando le damos a la máquina instrucciones paso a paso, ejecutadas de arriba hacia abajo. Es decir, le decimos exactamente qué hacer en cada línea del programa, en el orden en que deben ocurrir las acciones.
 Este método es fácil de entender en programas cortos, pero cuando el código se vuelve más largo, puede volverse difícil de mantener y entender, ya que hay muchas líneas consecutivas que dependen unas de otras.
 El paradigma procedimental es muy parecido al paradigma imperativo.\
- La diferencia es que el paradigma procedimental permite definir instrucciones en bloques separados llamados funciones, los cuales pueden ser reutilizados múltiples veces en el código.
+La diferencia es que el paradigma procedimental permite definir instrucciones en bloques separados llamados funciones, los cuales pueden ser reutilizados múltiples veces en el código.
 Este método ayuda a reducir considerablemente la cantidad de líneas escritas, ya que evita repetir código. Sin embargo, cuando el programa es muy complejo, también puede volverse difícil de entender.
 Ahora hablaremos del paradigma orientado a objetos, uno de los más usados hoy en día.
 A diferencia del paradigma imperativo o procedimental, donde el código se organiza en funciones o instrucciones paso a paso, en el paradigma orientado a objetos el código se organiza en objetos.
 Un objeto contiene dos cosas principales\: atributos y métodos.\
- Los atributos son datos que el objeto tendrá, como por ejemplo el nombre de una persona, su DNI o su peso.
+Los atributos son datos que el objeto tendrá, como por ejemplo el nombre de una persona, su DNI o su peso.
 Los métodos son funciones que pueden usar estos atributos; por ejemplo, que la persona se presente diciendo cuál es su peso.
 Este tema se llama Programación Orientada a Objetos (POO), y lo estudiaremos más a fondo en clases posteriores.
 Este paradigma es el más completo y adecuado para programas grandes y complejos, pero suele ser difícil de entender si recién estás empezando a programar.\
- Por lo tanto, se recomienda aprender primero uno de los paradigmas anteriores.
+Por lo tanto, se recomienda aprender primero uno de los paradigmas anteriores.
 Y por último, el paradigma funcional es un método de programación que se enfoca en el uso intensivo de funciones. Es decir, todo se puede simplificar a una función. Además, se utilizan datos inmutables, lo que significa que, en lugar de modificar un dato existente, se prefiere crear un nuevo dato con el valor actualizado de un dato antes de cambiar este.
 Bueno, chicos, la clase de hoy fue corta. Espero que hayan entendido todo. Nos vemos en la siguiente clase.
