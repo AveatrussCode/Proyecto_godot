@@ -1,0 +1,117 @@
+[gd_scene load_steps=11 format=3 uid="uid://begv3eg7vm5j7"]
+
+[ext_resource type="Script" uid="uid://ly408rfi4v6b" path="res://Personajes/npc_1/prueva_d.gd" id="1_o4tsj"]
+[ext_resource type="Texture2D" uid="uid://dyhuluitcbiqn" path="res://Personajes/npc_1/alicia.png" id="2_o4tsj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fn2n8"]
+size = Vector2(38.6875, 36.5)
+
+[sub_resource type="Animation" id="Animation_144x1"]
+resource_name = "alice"
+
+[sub_resource type="Animation" id="Animation_j6iga"]
+resource_name = "atras"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.37, 0.73),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 0, 0]
+}
+
+[sub_resource type="Animation" id="Animation_trw26"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_krs4p"]
+resource_name = "derecha"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.34, 0.73),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [3, 4, 5]
+}
+
+[sub_resource type="Animation" id="Animation_4h8oi"]
+resource_name = "izquierda"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.36, 0.72),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [8, 7, 6]
+}
+
+[sub_resource type="Animation" id="Animation_20vm0"]
+resource_name = "frente"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.36, 0.77),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [9, 10, 11]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b4756"]
+_data = {
+&"RESET": SubResource("Animation_trw26"),
+&"alice": SubResource("Animation_144x1"),
+&"atras": SubResource("Animation_j6iga"),
+&"derecha": SubResource("Animation_krs4p"),
+&"frente": SubResource("Animation_20vm0"),
+&"izquierda": SubResource("Animation_4h8oi")
+}
+
+[node name="alice" type="CharacterBody2D"]
+script = ExtResource("1_o4tsj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-4.76837e-07, -9.53674e-07)
+scale = Vector2(0.0818136, 0.0737305)
+texture = ExtResource("2_o4tsj")
+hframes = 3
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_fn2n8")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Sprite2D")
+libraries = {
+&"": SubResource("AnimationLibrary_b4756")
+}
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.407

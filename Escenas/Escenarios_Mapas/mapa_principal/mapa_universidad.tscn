@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=4 uid="uid://dajqdo53hnpvw"]
+[gd_scene load_steps=42 format=4 uid="uid://dajqdo53hnpvw"]
 
 [ext_resource type="Script" uid="uid://by3ba7p0gl8c0" path="res://Escenas/Escenarios_Mapas/mapa_principal/mapa_universidad.gd" id="1_pacmp"]
 [ext_resource type="Texture2D" uid="uid://bmgc07oittiq7" path="res://Imagenes/tile_map_mapa/suelo.png" id="2_vluxq"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://3wbfie5jlngi" path="res://Imagenes/tile_map_mapa/edificio1.png" id="8_wu66y"]
 [ext_resource type="Texture2D" uid="uid://dn7orwi8gv0ak" path="res://Imagenes/tile_map_mapa/edificio2.png" id="9_0da30"]
 [ext_resource type="AudioStream" uid="uid://syyhmdo7j6c5" path="res://Musica/musica de fondo/mapa_libre.mp3" id="15_0da30"]
+[ext_resource type="PackedScene" uid="uid://begv3eg7vm5j7" path="res://Personajes/npc_1/Alice_npc.tscn" id="16_evjjd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u27hf"]
 texture = ExtResource("2_vluxq")
@@ -2699,6 +2700,9 @@ shape = SubResource("SegmentShape2D_wu66y")
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("15_0da30")
 autoplay = true
+
+[node name="alice" parent="." instance=ExtResource("16_evjjd")]
+position = Vector2(-138, -26)
 
 [connection signal="body_entered" from="Area_entrar_a_clase_mapa_universitario" to="Area_entrar_a_clase_mapa_universitario" method="_on_body_entered"]
 [connection signal="body_exited" from="Area_entrar_a_clase_mapa_universitario" to="Area_entrar_a_clase_mapa_universitario" method="_on_body_exited"]
