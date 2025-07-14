@@ -24,10 +24,12 @@ Configurador="*res://Escenas/Escenas_Globales/configurador.gd"
 [dialogic]
 
 directories/dch_directory={
+"Alicia": "res://Personajes/npc_1/Alicia.dch",
 "Profesor_zela": "res://Personajes/Profesor_(NPC)/Profesor_zela.dch",
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
+"Dialogos_alicia": "res://Personajes/npc_1/Dialogos_alicia.dtl",
 "Inprimir_nuetro_hola_mundo": "res://Personajes/Profesor_(NPC)/Dialogos/Inprimir_nuetro_hola_mundo.dtl"
 }
 layout/style_list=["res://Estilo_novela.tres"]

@@ -1,0 +1,12 @@
+join Alicia center
+Alicia: .....
+Alicia: Hola
+mmm
+Me llamo Alicia un gusto
+Alicia: ¿Estas perdido?
+- Si
+	Alicia: Yo tambien, creo que es en el edificio de arriba
+	Alicia: ¿Podiras ir aver?
+	Alicia: Por fabor
+- No
+	¡Por fabor! indicame donde es si no es mucha molestia

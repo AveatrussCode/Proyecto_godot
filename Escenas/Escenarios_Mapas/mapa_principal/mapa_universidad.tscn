@@ -2699,6 +2699,7 @@ shape = SubResource("SegmentShape2D_wu66y")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("15_0da30")
+volume_db = -21.523
 autoplay = true
 
 [node name="alice" parent="." instance=ExtResource("16_evjjd")]

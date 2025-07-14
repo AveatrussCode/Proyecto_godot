@@ -1,9 +1,24 @@
 extends CharacterBody2D
 @export var speed: int = 60
 @onready var animations = $AnimationPlayer
+var player_is_near = false
+
+
 
 var tiempo_direccion := 0.0
 var moveDirection := Vector2.ZERO
+
+func _ready() -> void:
+	$Label.hide()
+
+func cambio_escena() ->void:
+	Dialogic.start("res://Personajes/npc_1/Dialogos_alicia.dtl")
+func _process(delta):
+	if player_is_near and Input.is_action_just_pressed("ui_accept"):
+		cambio_escena()
+
+
+
 
 func handleInput(delta):
 	tiempo_direccion -= delta
@@ -36,3 +51,15 @@ func _physics_process(delta):
 	handleInput(delta)
 	move_and_slide()
 	updateAnimation()
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if body.name == "Protagonista":
+		player_is_near = true
+		$Label.show()
+
+
+func _on_area_2d_body_exited(body: Node2D) -> void:
+	if body.name == "Protagonista":
+		player_is_near = false
+		$Label.hide()
