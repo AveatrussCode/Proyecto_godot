@@ -1,0 +1,54 @@
+Profesor_zela: Buenos días, chicos. Espero que hayan descansado bien. Hoy vamos a hablar sobre los condicionales en C++. Primero, ¿qué es un condicional y para qué sirve?\
+
+Profesor_zela: Un condicional es una forma de decirle a la computadora\: “Haz esto solo si se cumple cierta condición”. Así podemos hacer que nuestro programa tome diferentes caminos según lo que ingresemos o la situación que se presente.\
+
+Profesor_zela: Ahora, les voy a mostrar los tipos de condicionales que tenemos en C++.\
+
+Profesor_zela: El primero es el if. Su estructura es sencilla\:\
+if (condición) {\
+    // aquí va el código que se ejecuta si la condición es verdadera\
+}\
+\
+
+Profesor_zela: Una cosa importante a tener en cuenta es que en la condición puede haber más de una sola, y para esto se usan los operadores lógicos. Los dos operadores lógicos más usados son el AND (&&) y el OR (||).\
+
+Profesor_zela: El operador lógico AND devuelve verdadero sólo si todas las condiciones son verdaderas; basta que una condición sea falsa para que devuelva falso.
+Profesor_zela: El operador OR es distinto, basta que una sola condición sea verdadera para que devuelva verdadero.\
+Podemos pensarlo así\:\
+Para AND\: “si pasa esto y esto y esto, entonces es verdadero”.\
+Para OR\: “si pasa esto o esto o esto, entonces es verdadero”.\
+
+Profesor_zela: Sabiendo esto podemos pasar con el segundo condicional el else, el else se usa cuando la condición del if no se cumple. Su estructura es\:\
+if (condición) {\
+    // si se cumple la condición\
+} else {\
+    // si no se cumple\
+}\
+
+Profesor_zela: Después tenemos el else if, que nos permite comprobar otra condición en caso la primera no se cumpla es como decir “Si no pasa esto, ¿pasa esto otro?”. Su estructura es\:\
+if (condición1) {\
+    // si se cumple condición1\
+} else if (condición2) {\
+    // si no se cumple la primera pero sí esta\
+} else {\
+    // si ninguna se cumple\
+}\
+
+Profesor_zela: También existe el switch, que funciona como un menú de opciones. Aquí evaluamos una variable y dependiendo del valor que tenga, ejecutamos diferentes casos. Si no coincide con ningún caso, ejecutamos lo que está en default. Su estructura es\:\
+int opcion = 2;\
+switch (opcion) {\
+    case 1\:\
+        // acción para opción 1\
+    case 2\:\
+        // acción para opción 2\
+    default\:\
+        // si no coincide ninguna opción\
+}\
+
+Profesor_zela: Y para terminar, tenemos el condicional ternario (?\:). Es como un if pero en una sola línea, ideal para decisiones rápidas\:\
+(condición) ? valor_si_verdadero \: valor_si_falso;\
+Por ejemplo\:\
+int edad = 18;\
+string resultado = (edad >= 18) ? "Mayor de edad" \: "Menor de edad";\
+
+Profesor_zela: Con esto cerramos la primera sesión. Pueden ir a su receso. 

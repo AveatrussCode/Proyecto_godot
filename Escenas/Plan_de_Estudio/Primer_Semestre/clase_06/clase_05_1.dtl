@@ -1,0 +1,25 @@
+Profesor_zela: Muy buenos días alumnos, en la clase del día de hoy hablaremos sobre los arreglos y las matrices. Primero debemos saber que estos existen para ordenar las cosas de mejor manera, es decir en vez de poner\:\
+int  objeto_1 = 54;\
+int  objeto_2 = 12;\
+int  objeto_3 = 78;\
+Podemos poner\:\
+int objetos[3]={54,12,78};\
+Profesor_zela: Al usar un arreglo, ya no tenemos que declarar tantas variables individuales, solo basta con declarar un arreglo que pueda almacenar, por ejemplo, 3 valores del mismo tipo.\
+Debemos saber que la posición de cada elemento en el arreglo se llama índice, y este siempre comienza desde el número 0. Es decir, si un arreglo tiene 3 elementos, sus índices serán\: 0, 1 y 2.\
+Profesor_zela: Para declarar un arreglo, primero escribimos el tipo de dato que queremos que almacene. Por ejemplo, si queremos que el arreglo guarde datos de tipo char, entonces empezamos poniendo char. Después de poner el tipo de dato, debemos escribir el nombre del arreglo, que es como lo identificamos en el código.\
+Luego, abrimos corchetes [ ] y dentro ponemos el número de elementos que el arreglo podrá contener. Esta parte es obligatoria y designa el tamaño del arreglo, es decir, cuántos espacios tendrá para guardar datos.
+Profesor_zela: Finalmente, podemos poner un signo igual = y abrir llaves {} para inicializar el arreglo con valores específicos. Si no ponemos nada, el arreglo se inicializará con valores basura (datos no definidos).\
+Si queremos interactuar con un dato del arreglo, tenemos que escribir el nombre del arreglo, abrir corchetes y colocar la posición (índice) del elemento. Por ejemplo\:\
+int arreglo[3] = {4, 8, 3};\
+arreglo[0]; // con esto llamamos al dato en la posición 0 del \
+arreglo[0]=2 // con esto podemos asignar un nuevo valor al dato de posición 0 del arreglo\
+int x=arreglo[1]// con esto le damos a x el valor 8
+Profesor_zela: Ahora hablaremos sobre qué es una matriz.Una matriz es un arreglo dentro de otro arreglo, es decir, un arreglo bidimensional. Si un arreglo tiene esta estructura\:\
+int objetos[3] = {1, 2, 3};\
+Una matriz tiene esta estructura\:\
+int objetos[2][3] = {\
+{1, 2, 3},\
+{4, 5, 6}\
+};
+Profesor_zela: Como se puede observar, una matriz está formada por filas y columnas.Las matrices sirven para almacenar grandes cantidades de datos organizados como en una tabla, lo que facilita el acceso y la manipulación de esos datos.
+Profesor_zela: Con esto hemos aprendido lo basico para poder programar.

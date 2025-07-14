@@ -1,0 +1,23 @@
+Profesor_zela: Espero que te hayas divertido y descansado, ahora continuamos con la segunda sesión del día de hoy, para esta sesión aprenderemos sobre los operadores relacionales, estos operadores comparan dos valores y devuelven verdadero o falso.\
+
+Profesor_zela: Primero, empecemos con el primer operador\: \
+(==) Este es el operador de igualdad. Devuelve verdadero si ambos elementos son iguales, y falso si no lo son.\
+El siguiente es (!=), el operador de desigualdad. Hace lo contrario al de igualdad\: devuelve verdadero si ambos valores son distintos, y falso si son iguales.\
+
+Profesor_zela: Luego tenemos el operador (<), llamado “menor que”. Devuelve verdadero si el primer valor es menor que el segundo, y falso si no lo es.\
+También está el operador (>), llamado “mayor que”. Devuelve verdadero si el primer valor es mayor que el segundo, y falso si no lo es.\
+
+Profesor_zela: Ahora veamos el operador (<=), que es una combinación de los dos anteriores. Devuelve verdadero si el primer valor es menor o igual al segundo, y falso sí no.\
+Finalmente, el operador (>=) devuelve verdadero si el primer valor es mayor o igual al segundo, y falso si no lo es.\
+
+Profesor_zela: Ahora si queremos que un dato aumente en 1 podemos poner\:\
+x = x +1;\
+Pero esto es largo y existe una manera simplificada de hacerlo la cual es poniendo\:\
+x++;\
+
+Profesor_zela: Lo mismo ocurre al decrecer un dato en 1\:\
+x = x -1;\
+su forma simplificada\:\
+x - - ;\
+
+Profesor_zela: Con esto terminamos la clase del día de hoy, nos vemos mañana alumnos.
