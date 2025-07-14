@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d1ogbpdk5r1ts"
+path="res://.godot/imported/clase.mp3-dc5ffd47c405acb2d4d5960085a2980b.mp3str"
+
+[deps]
+
+source_file="res://Musica/musica de fondo/clase.mp3"
+dest_files=["res://.godot/imported/clase.mp3-dc5ffd47c405acb2d4d5960085a2980b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

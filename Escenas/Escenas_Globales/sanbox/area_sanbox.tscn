@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bdackrptrbk2r"]
+[gd_scene load_steps=18 format=3 uid="uid://bdackrptrbk2r"]
 
 [ext_resource type="Script" uid="uid://p2ribe2ifg62" path="res://Escenas/Escenas_Globales/sanbox/area_sanbox.gd" id="1_583xu"]
 [ext_resource type="PackedScene" uid="uid://brylbyorugoip" path="res://Escenas/Escenas_Globales/esenas_bloques_codigo/objeto_movible.tscn" id="1_xx3tr"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://b4hwdvcrdm057" path="res://Imagenes/assets_codigo/pc2.png" id="2_x1rnt"]
 [ext_resource type="Script" uid="uid://d2fix7cobf8xo" path="res://Escenas/Escenas_Globales/sanbox/codigo_mobible.gd" id="4_23tyh"]
 [ext_resource type="Texture2D" uid="uid://beqgi08hdgtfv" path="res://Imagenes/assets_de_botones/flecha.png" id="7_gw4xv"]
+[ext_resource type="AudioStream" uid="uid://d1ogbpdk5r1ts" path="res://Musica/musica de fondo/clase.mp3" id="8_hhnfm"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_23tyh"]
 bg_color = Color(0.839216, 0.6, 0.0980392, 1)
@@ -404,6 +405,10 @@ offset_bottom = 350.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_ty7e7")
 text = "RUM"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_hhnfm")
+autoplay = true
 
 [connection signal="item_selected" from="codigo_mobible/objeto9/OptionButton" to="." method="_on_option_button_item_selected"]
 [connection signal="pressed" from="codigo_mobible/objeto9/Button" to="." method="_on_button_pressed"]

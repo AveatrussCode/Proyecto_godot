@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://syyhmdo7j6c5"
+path="res://.godot/imported/mapa_libre.mp3-265a6332d450aae2f11d04f519a465a1.mp3str"
+
+[deps]
+
+source_file="res://Musica/musica de fondo/mapa_libre.mp3"
+dest_files=["res://.godot/imported/mapa_libre.mp3-265a6332d450aae2f11d04f519a465a1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -3,7 +3,6 @@ extends Control
 func _ready():
 	GLOBAL.create_transition(self,1)
 
-
 func _on_new_game_pressed() -> void:
 	GLOBAL.create_transition(self,2)
 	await get_tree().create_timer(1).timeout

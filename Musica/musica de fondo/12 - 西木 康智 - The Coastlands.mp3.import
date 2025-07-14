@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cdnv5htnpogwe"
+path="res://.godot/imported/12 - 西木 康智 - The Coastlands.mp3-ee0548254eaf5f277d1ab236af982a91.mp3str"
+
+[deps]
+
+source_file="res://Musica/musica de fondo/12 - 西木 康智 - The Coastlands.mp3"
+dest_files=["res://.godot/imported/12 - 西木 康智 - The Coastlands.mp3-ee0548254eaf5f277d1ab236af982a91.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
