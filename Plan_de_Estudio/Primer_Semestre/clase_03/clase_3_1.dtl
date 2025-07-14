@@ -1,57 +1,32 @@
-<<<<<<< HEAD
 join Nancy center [animation="Fade In"]
-[sound path="res://Sonidos/clase_3_1/1.wav" volume="0.0"]
-=======
-join Nancy center
-Nancy: <<<<<<< HEAD
-[voice path="res://Sonidos/clase_3_1/1.mp3" volume="0.0"]
->>>>>>> d33a8a3e31c169f634f0ad30acd016c16cb7b4ef
+[voice path="res://Sonidos/clase_3_1/1.wav" volume="0.0"]
 Nancy: ¡Hola! Bienvenido a este espacio de aprendizaje.\
 Soy la profesora Nancy Rivera, tu guía en este fascinante viaje por el mundo de la computación.
-[sound path="res://Sonidos/clase_3_1/2.mp3" volume="0.0"]
+[voice path="res://Sonidos/clase_3_1/2.wav" volume="0.0"]
 Nancy: En esta clase hablaremos sobre los tipos de datos y los operadores aritméticos.\
 Nosotros estaremos programando en el lenguaje C++, que es un lenguaje de nivel medio.\
 Por eso, hablaremos sobre los tipos de datos en C++.\
 La mayoría de los lenguajes tienen tipos de datos muy parecidos, así que no se preocupen.
-[sound path="res://Sonidos/clase_3_1/3.mp3" volume="0.0"]
+[voice path="res://Sonidos/clase_3_1/3.wav" volume="0.0"]
 Nancy: Empecemos diciendo los tipos de datos más simples\:\
 Int\: almacena números enteros, por ejemplo\: 50, -10.\
-Float\: almacena números con parte decimal (punto flotante) con precisión simple, por lo que suele manejar pocos decimales.\
-Profesor_zela\: Double\: almacena números con parte decimal con mayor precisión que el float, se usa para decimales largos o más precisos.\
+Float\: almacena números con parte decimal (punto flotante) con precisión simple, por lo que suele manejar pocos decimales.
+[voice path="res://Sonidos/clase_3_1/4.wav" volume="0.0"]
+Nancy: Double\: almacena números con parte decimal con mayor precisión que el float, se usa para decimales largos o más precisos.\
 Char\: almacena un solo carácter, ya sea número, símbolo o letra.\
-Bool\: almacena valores de verdad, es decir, solo puede ser verdadero (true) o falso (false).\
-Profesor_zela\: Ahora hablaremos sobre los operadores aritméticos en C++. En esta sección veremos operadores que ya conocemos, pues los usamos en el día a día. Los operadores aritméticos son los siguientes\:\
-suma (+), resta (-), multiplicación (*), división (/) y módulo (%).\
-Profesor_zela\: Lo único que puede causar confusión son los dos últimos\:\
-<<<<<<< HEAD
-La división ( / ) entre dos valores de tipo entero, como por ejemplo 10 / 3, da como resultado 3 y no 3.333, ya que al trabajar con dos enteros, la división devolverá únicamente la parte entera del resultado.\
-=======
-=======
-Nancy: Es un gusto verte de nuevo. En esta clase hablaremos sobre los tipos de datos y los operadores aritméticos.\
-Nosotros estaremos programando en el lenguaje C++, que es un lenguaje de nivel medio.\
-Por eso, hablaremos sobre los tipos de datos en C++.\
-La mayoría de los lenguajes tienen tipos de datos muy parecidos, así que no se preocupen.
-Nancy: Empecemos diciendo los tipos de datos más simples\:\
-Int\: almacena números enteros, por ejemplo\: 50, -10.\
-Float\: almacena números con parte decimal (punto flotante) con precisión simple, por lo que suele manejar pocos decimales.\
-Nancy\: Double\: almacena números con parte decimal con mayor precisión que el float, se usa para decimales largos o más precisos.\
-Char\: almacena un solo carácter, ya sea número, símbolo o letra.\
-Bool\: almacena valores de verdad, es decir, solo puede ser verdadero (true) o falso (false).\
-Nancy\: Ahora hablaremos sobre los operadores aritméticos en C++. En esta sección veremos operadores que ya conocemos, pues los usamos en el día a día. Los operadores aritméticos son los siguientes\:\
-suma (+), resta (-), multiplicación (*), división (/) y módulo (%).\
-Nancy\: Lo único que puede causar confusión son los dos últimos\:\
->>>>>>> 3e66210a9fed289e6d1b11ad99845955a41d8457
+Bool\: almacena valores de verdad, es decir, solo puede ser verdadero (true) o falso (false).
+[voice path="res://Sonidos/clase_3_1/5.wav" volume="0.0"]
+Nancy: Ahora hablaremos sobre los operadores aritméticos en C++. En esta sección veremos operadores que ya conocemos, pues los usamos en el día a día. Los operadores aritméticos son los siguientes\:
+[voice path="res://Sonidos/clase_3_1/6.wav" volume="0.0"]
+Nancy: suma (+), resta (-), multiplicación (*), división (/) y módulo (%).\
+Lo único que puede causar confusión son los dos últimos\:
+[voice path="res://Sonidos/clase_3_1/7.wav" volume="0.0"]
 Nancy: La división ( / ) entre dos valores de tipo entero, como por ejemplo 10 / 3, da como resultado 3 y no 3.333, ya que al trabajar con dos enteros, la división devolverá únicamente la parte entera del resultado.\
->>>>>>> d33a8a3e31c169f634f0ad30acd016c16cb7b4ef
-Para obtener decimales, basta con convertir al menos uno de los valores a tipo float o double. De esa forma, la división se realiza con mayor precisión.
-Nancy: El operador módulo (%) devuelve el residuo de una división. \
-Por ejemplo\: 10 % 3 devuelve 1, porque 10 dividido entre 3 da 3 con un residuo de 1.\
-<<<<<<< HEAD
-Profesor_zela\: Con esto finalizamos la primera sesión, pueden salir a su receso.\
-=======
-<<<<<<< HEAD
+isión.
+[voice path="res://Sonidos/clase_3_1/8.wav" volume="0.0"]
+Nancy: Para obtener decimales, basta con convertir al menos uno de los valores a tipo float o double. De esa forma, la división se realiza con mayor precisión.
+[voice path="res://Sonidos/clase_3_1/9.wav" volume="0.0"]
+Nancy: El operador módulo (%) devuelve el residuo de una división.\
+Por ejemplo\: 10 % 3 devuelve 1, porque 10 dividido entre 3 da 3 con un residuo de 1.
+[voice path="res://Sonidos/clase_3_1/10.wav" volume="0.0"]
 Nancy: Con esto finalizamos la primera sesión, pueden salir a su receso.\
-=======
-Nancy: Con esto finalizamos la primera sesión, pueden salir a su receso.\
->>>>>>> 3e66210a9fed289e6d1b11ad99845955a41d8457
->>>>>>> d33a8a3e31c169f634f0ad30acd016c16cb7b4ef

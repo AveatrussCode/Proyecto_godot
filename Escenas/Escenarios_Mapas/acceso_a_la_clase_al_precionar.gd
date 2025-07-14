@@ -14,6 +14,8 @@ func cambio_escena() ->void:
 			get_tree().change_scene_to_file("res://Plan_de_Estudio/Primer_Semestre/clase_00/clase_0.tscn")
 		1:
 			get_tree().change_scene_to_file("res://Plan_de_Estudio/Primer_Semestre/clase_01/clase_1.tscn")
+		3: 
+			get_tree().change_scene_to_file("res://Plan_de_Estudio/Primer_Semestre/clase_03/clase_3_1.tscn")
 		_:
 			GLOBAL.numero_clase = 0
 			get_tree().change_scene_to_file("res://Plan_de_Estudio/Primer_Semestre/clase_00/clase_0.tscn")
