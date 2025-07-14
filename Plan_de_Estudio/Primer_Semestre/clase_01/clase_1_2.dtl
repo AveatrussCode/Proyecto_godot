@@ -1,12 +1,21 @@
-Bienvenido, espero que hayas descansado en tu receso. Ahora continuamos con la segunda sesión del día.
-En esta parte responderemos a la siguiente pregunta\: ¿Qué es un intérprete y qué es un compilador?
-Un lenguaje de programación es aquel con el cual podemos dar instrucciones a una máquina, pero eso no significa que la máquina lo entienda directamente.
-Lo que ocurre es que el código que escribimos debe ser traducido primero a código binario (ceros y unos), que es el único que la computadora puede procesar.
-Existen dos formas principales en las que esta traducción puede hacerse\:\
-
-Una forma es cuando primero se traduce todo el código y luego se ejecuta. A eso se le llama compilador.
-La otra forma es cuando el programa traduce y ejecuta el código al mismo tiempo. A eso se le llama intérprete.
-Ambos métodos tienen sus ventajas y desventajas\:
-Un compilador permite una ejecución más rápida, ya que el programa ya está completamente traducido. Sin embargo, implica dos pasos\: primero se genera un archivo ejecutable, y luego se ejecuta ese archivo.
-En cambio, un intérprete realiza la traducción y la ejecución al mismo tiempo, lo cual es más directo, pero suele ser más lento, porque la computadora está haciendo las dos tareas al mismo tiempo.
-Con esto acabamos la clase del día de hoy, nos vemos en la siguiente clase alumnos.
+join Profesor_zela left
+[voice path="res://Sonidos/voices/clase_01_2/1.mp3" volume="0.0"]
+Profesor_zela: Bienvenido, espero que hayas descansado en tu receso. Ahora continuamos con la segunda sesión del día.
+[voice path="res://Sonidos/voices/clase_01_2/2.mp3" volume="0.0"]
+Profesor_zela: En esta parte responderemos a la siguiente pregunta\: ¿Qué es un intérprete y qué es un compilador?
+[voice path="res://Sonidos/voices/clase_01_2/3.mp3" volume="0.0"]
+Profesor_zela: Primero debemos entender que un lenguaje de programación es aquel con el cual podemos dar instrucciones a una máquina, pero eso no significa que la máquina lo entienda directamente.
+[voice path="res://Sonidos/voices/clase_01_2/4.mp3" volume="0.0"]
+Profesor_zela: Lo que ocurre es que el código que escribimos debe ser traducido primero a código binario (ceros y unos), que es el único que la computadora puede procesar.
+[voice path="res://Sonidos/voices/clase_01_2/5.mp3" volume="0.0"]
+Profesor_zela: Existen dos formas principales en las que esta traducción puede hacerse\:
+[voice path="res://Sonidos/voices/clase_01_2/6.mp3" volume="0.0"]
+Profesor_zela: Una forma es cuando primero se traduce todo el código y luego se ejecuta. A eso se le llama compilador.
+[voice path="res://Sonidos/voices/clase_01_2/7.mp3" volume="0.0"]
+Profesor_zela: La otra forma es cuando el programa traduce y ejecuta el código al mismo tiempo. A eso se le llama intérprete.
+[voice path="res://Sonidos/voices/clase_01_2/8.mp3" volume="0.0"]
+Profesor_zela: Ambos métodos tienen sus ventajas y desventajas\: Un compilador permite una ejecución más rápida, ya que el programa ya está completamente traducido. Sin embargo, implica dos pasos\: primero se genera un archivo ejecutable, y luego se ejecuta ese archivo.
+[voice path="res://Sonidos/voices/clase_01_2/9.mp3" volume="0.0"]
+Profesor_zela: En cambio, un intérprete realiza la traducción y la ejecución al mismo tiempo, lo cual es más directo, pero suele ser más lento, porque la computadora está haciendo las dos tareas al mismo tiempo.
+[voice path="res://Sonidos/voices/clase_01_2/10.mp3" volume="0.0"]
+Profesor_zela: Con esto acabamos la clase del día de hoy, nos vemos en la siguiente clase alumnos.
