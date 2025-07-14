@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://yq442ybu6700"]
+[gd_scene load_steps=3 format=3 uid="uid://cf3wbjub6d6rt"]
 
 [ext_resource type="Script" path="res://Plan_de_Estudio/Primer_Semestre/clase_03/clase_3_1.gd" id="1_k7wcu"]
 [ext_resource type="Texture2D" uid="uid://j2rgyvbg60p0" path="res://Imagenes/tile_map_mapa/background_pizarra.png" id="1_u6gyd"]
