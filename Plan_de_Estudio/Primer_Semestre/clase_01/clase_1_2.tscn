@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdn64ub24u5bl"]
+
+[ext_resource type="Script" uid="uid://bmaegcrkxoo57" path="res://Plan_de_Estudio/Primer_Semestre/clase_01/clase_1_2.gd" id="1_nu206"]
+[ext_resource type="AudioStream" uid="uid://behv7172ydujh" path="res://Musica/musica de fondo/fonfo_musica_clase_o.mp3" id="2_nos4o"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_nu206")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_nos4o")
+volume_db = -26.315
