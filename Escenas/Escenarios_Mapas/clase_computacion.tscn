@@ -306,6 +306,7 @@ tile_set = SubResource("TileSet_8rpat")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_6wggh")
+volume_db = -36.199
 autoplay = true
 
 [connection signal="body_entered" from="Acceso_a_la_clase_al_precionar" to="Acceso_a_la_clase_al_precionar" method="_on_body_entered"]

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cr6ned5x1vb2f"]
+
+[ext_resource type="Texture2D" uid="uid://j2rgyvbg60p0" path="res://Imagenes/tile_map_mapa/background_pizarra.png" id="1_442ra"]
+[ext_resource type="Script" uid="uid://d2cskvkba2h7j" path="res://Escenas/Plan_de_Estudio/Primer_Semestre/clase_02/clase_1.gd" id="1_rfrns"]
+[ext_resource type="AudioStream" uid="uid://behv7172ydujh" path="res://Musica/musica de fondo/fonfo_musica_clase_o.mp3" id="2_rfrns"]
+
+[node name="clase_1" type="Node2D"]
+script = ExtResource("1_rfrns")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(320, 180)
+scale = Vector2(1.77778, 2)
+texture = ExtResource("1_442ra")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_rfrns")
+volume_db = -27.766

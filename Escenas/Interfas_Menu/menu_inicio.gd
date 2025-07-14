@@ -10,7 +10,10 @@ func _on_new_game_pressed() -> void:
 
 
 func _on_load_game_pressed() -> void:
-	pass # Replace with function body.
+	GLOBAL.load_game()
+	GLOBAL.create_transition(self,2)
+	await get_tree().create_timer(1).timeout
+	get_tree().change_scene_to_file("res://Escenas/Escenarios_Mapas/clase_computacion.tscn")
 
 
 func _on_options_pressed() -> void:
