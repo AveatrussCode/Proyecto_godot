@@ -1,18 +1,30 @@
 join Nancy center
-Nancy: Espero que te hayas divertido y descansado, ahora continuamos con la segunda sesión del día de hoy, para esta sesión aprenderemos sobre los operadores relacionales, estos operadores comparan dos valores y devuelven verdadero o falso.\
-Nancy: Primero, empecemos con el primer operador\: \
-(==) Este es el operador de igualdad. Devuelve verdadero si ambos elementos son iguales, y falso si no lo son.\
-El siguiente es (!=), el operador de desigualdad. Hace lo contrario al de igualdad\: devuelve verdadero si ambos valores son distintos, y falso si son iguales.\
-Nancy: Luego tenemos el operador (<), llamado “menor que”. Devuelve verdadero si el primer valor es menor que el segundo, y falso si no lo es.\
-También está el operador (>), llamado “mayor que”. Devuelve verdadero si el primer valor es mayor que el segundo, y falso si no lo es.\
-Nancy: Ahora veamos el operador (<=), que es una combinación de los dos anteriores. Devuelve verdadero si el primer valor es menor o igual al segundo, y falso sí no.\
-Finalmente, el operador (>=) devuelve verdadero si el primer valor es mayor o igual al segundo, y falso si no lo es.\
+[voice path="res://Sonidos/clase_3_2/1.wav" volume="0.0"]
+Nancy: Espero que te hayas divertido y descansado, ahora continuamos con la segunda sesión del día de hoy, para esta sesión aprenderemos sobre los operadores relacionales, estos operadores comparan dos valores y devuelven verdadero o falso.
+[voice path="res://Sonidos/clase_3_2/2.wav" volume="0.0"]
+Nancy: Empecemos con el primer operador\: \
+
+[voice path="res://Sonidos/clase_3_2/3.wav" volume="0.0"]
+Nancy: (==) Este es el operador de igualdad. Devuelve verdadero si ambos elementos son iguales, y falso si no lo son.
+[voice path="res://Sonidos/clase_3_2/4.wav" volume="0.0"]
+Nancy: El siguiente es (!=), el operador de desigualdad. Hace lo contrario al de igualdad\: devuelve verdadero si ambos valores son distintos, y falso si son iguales.
+[voice path="res://Sonidos/clase_3_2/5.wav" volume="0.0"]
+Nancy: Luego tenemos el operador (<), llamado “menor que”. Devuelve verdadero si el primer valor es menor que el segundo, y falso si no lo es.
+[voice path="res://Sonidos/clase_3_2/6.wav" volume="0.0"]
+Nancy: También está el operador (>), llamado “mayor que”. Devuelve verdadero si el primer valor es mayor que el segundo, y falso si no lo es.
+[voice path="res://Sonidos/clase_3_2/7.wav" volume="0.0"]
+Nancy: Ahora veamos el operador (<=), que es una combinación de los dos anteriores. Devuelve verdadero si el primer valor es menor o igual al segundo, y falso sí no.
+[voice path="res://Sonidos/clase_3_2/8.wav" volume="0.0"]
 Nancy: Ahora si queremos que un dato aumente en 1 podemos poner\:\
-x = x +1;\
-Pero esto es largo y existe una manera simplificada de hacerlo la cual es poniendo\:\
-x++;\
+x = x +1;
+[voice path="res://Sonidos/clase_3_2/9.wav" volume="0.0"]
+Nancy: Pero esto es largo y existe una manera simplificada de hacerlo la cual es poniendo\:\
+x++;
+[voice path="res://Sonidos/clase_3_2/10.wav" volume="0.0"]
 Nancy: Lo mismo ocurre al decrecer un dato en 1\:\
 x = x -1;\
 su forma simplificada\:\
-x - - ;\
-Nancy: Con esto terminamos la clase del día de hoy, nos vemos mañana alumnos.
+x - - ;
+[voice path="res://Sonidos/clase_3_2/11.wav" volume="0.0"]
+Nancy: Con esto terminamos la clase del día de hoy, nos vemos mañana alumnos.\
+
