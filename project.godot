@@ -25,9 +25,7 @@ Configurador="*res://Escenas/Escenas_Globales/configurador.gd"
 
 directories/dch_directory={
 "Alicia": "res://Personajes/npc_1/Alicia.dch",
-"Nancy": "res://Plan_de_Estudio/Primer_Semestre/clase_03/Nancy.dch",
 "Profesor_zela": "res://Personajes/Profesor_(NPC)/Profesor_zela.dch",
-"mohammed": "res://Plan_de_Estudio/Primer_Semestre/clase_02/mohammed.dch",
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
