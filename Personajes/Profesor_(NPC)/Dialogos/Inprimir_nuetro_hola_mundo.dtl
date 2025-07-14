@@ -1,5 +1,4 @@
 join Profesor_zela left
-[sound path="res://profe1.mp3" volume="0.0"]
 [voice path="res://Sonidos/voices/1_1.ogg" volume="0.0"]
 Profesor_zela: Muy buenas tardes, alumnos. Soy el profesor Eduardo Zela y les daré su primera clase introductoria para aprender Programación.
 label inicio
@@ -11,7 +10,6 @@ Profesor_zela: Una computadora es una máquina electrónica capaz de recibir dat
 Profesor_zela: Existen muchos tipos de computadoras, como las supercomputadoras, minicomputadoras, microcomputadoras y computadoras personales.
 [voice path="res://Sonidos/voices/1_5.ogg" volume="0.0"]
 Profesor_zela: Nosotros hablaremos de las PC (computadoras personales), las cuales se dividen en dos grandes partes\: el hardware y el software.
-[sound path="res://profe1.mp3" volume="0.0"]
 [voice path="res://Sonidos/voices/1_6.ogg" volume="0.0"]
 Profesor_zela: El hardware de una computadora es la parte física, la parte que podemos tocar. Está construido en torno a un elemento clave\: el CPU o microprocesador, que es la mente de toda la PC y controla todas sus funciones principales, como la memoria y las operaciones matemáticas.
 [voice path="res://Sonidos/voices/1_7.ogg" volume="0.0"]
