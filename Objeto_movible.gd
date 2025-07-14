@@ -8,6 +8,10 @@ var body_ref
 var offset: Vector2
 var posicion_inicial: Vector2
 var copia
+
+
+
+
 func _process(_delta):  
 	if movible:
 		if Input.is_action_just_pressed("click"):
