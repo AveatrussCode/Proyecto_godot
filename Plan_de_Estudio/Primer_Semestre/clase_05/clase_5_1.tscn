@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://bn4hcivv6qo7u"]
+
+[ext_resource type="Script" uid="uid://dhdw1teh1tx5u" path="res://Plan_de_Estudio/Primer_Semestre/clase_05/clase_5_1.gd" id="1_fgtpk"]
+[ext_resource type="Texture2D" uid="uid://j2rgyvbg60p0" path="res://Imagenes/tile_map_mapa/background_pizarra.png" id="2_lkivm"]
+
+[sub_resource type="GDScript" id="GDScript_qucak"]
+script/source = "extends Sprite2D
+"
+
+[node name="Clase51" type="Node2D"]
+script = ExtResource("1_fgtpk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(320, 180)
+scale = Vector2(1.77778, 2)
+texture = ExtResource("2_lkivm")
+script = SubResource("GDScript_qucak")

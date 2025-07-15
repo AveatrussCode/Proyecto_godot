@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbsp45gsfp48w"]
+
+[ext_resource type="Script" uid="uid://bs0ipm17bhdwk" path="res://Plan_de_Estudio/Primer_Semestre/clase_04/clase_04_2.gd" id="1_iptcq"]
+[ext_resource type="Texture2D" uid="uid://j2rgyvbg60p0" path="res://Imagenes/tile_map_mapa/background_pizarra.png" id="2_2xy83"]
+
+[sub_resource type="GDScript" id="GDScript_kd2l0"]
+script/source = "extends Sprite2D
+"
+
+[node name="Clase042" type="Node2D"]
+script = ExtResource("1_iptcq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(320, 180)
+scale = Vector2(1.77778, 2)
+texture = ExtResource("2_2xy83")
+script = SubResource("GDScript_kd2l0")
