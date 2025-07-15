@@ -1,9 +1,11 @@
 extends Area2D
 
 var player_is_near = false
+var player_es_near_exit = false
 
 func _ready():
 	$Label.hide()
+	$"../Label".hide()
 
 func cambio_escena() ->void:
 	GLOBAL.return_position = get_node("/root/Clase_computacion/Protagonista").global_position
@@ -22,7 +24,6 @@ func cambio_escena() ->void:
 			get_tree().change_scene_to_file("res://Plan_de_Estudio/Primer_Semestre/clase_03/clase_3_1.tscn")
 		5:
 			get_tree().change_scene_to_file("res://Plan_de_Estudio/Primer_Semestre/clase_03/clase_3_2.tscn")
-
 		_:
 			GLOBAL.numero_clase = 0
 			get_tree().change_scene_to_file("res://Plan_de_Estudio/Primer_Semestre/clase_00/clase_0.tscn")
@@ -36,6 +37,11 @@ func _process(delta):
 		GLOBAL.numero_clase = GLOBAL.numero_clase + 1
 		GLOBAL.save_game()
 		cambio_escena()
+	if player_es_near_exit and Input.is_action_just_pressed("ui_accept"):
+		GLOBAL.save_game()
+		get_tree().change_scene_to_file("res://Escenas/Escenarios_Mapas/mapa_principal/mapa_universidad.tscn")
+		
+
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "Protagonista":
 		player_is_near = true
@@ -45,3 +51,15 @@ func _on_body_exited(body: Node2D) -> void:
 		player_is_near = false
 		$Label.hide()
 		
+
+
+func _on_salida_body_entered(body: Node2D) -> void:
+	if body.name == "Protagonista":
+		player_es_near_exit = true
+		$"../Label".show()
+
+
+func _on_salida_body_exited(body: Node2D) -> void:
+	if body.name == "Protagonista":
+		player_es_near_exit = false
+		$"../Label".hide()

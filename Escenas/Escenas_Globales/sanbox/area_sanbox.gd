@@ -98,3 +98,7 @@ func _on_option_button_n_item_selected(index: int) -> void:
 func _on_button_n_pressed() -> void:
 	menu_n.visible = not menu_n.visible
 	boton_n.visible = false
+
+
+func _on_salida_pressed() -> void:
+	get_tree().change_scene_to_file("res://Escenas/Escenarios_Mapas/mapa_principal/mapa_universidad.tscn")

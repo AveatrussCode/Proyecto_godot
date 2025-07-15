@@ -5,6 +5,8 @@ func _ready():
 	$Label.hide()
 	$"../Area_ingresar_sanbox/Label".hide()
 func cambio_escena() ->void:
+	GLOBAL.create_transition(self,2)
+	await get_tree().create_timer(1).timeout
 	var clase = preload("res://Escenas/Escenarios_Mapas/clase_computacion.tscn")
 	var sanbox = preload("res://Escenas/Escenas_Globales/sanbox/area_sanbox.tscn")
 	if (numero_escena == 1):

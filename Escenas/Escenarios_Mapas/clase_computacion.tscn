@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://b6ib0qqmab0du"]
+[gd_scene load_steps=15 format=4 uid="uid://b6ib0qqmab0du"]
 
 [ext_resource type="Script" uid="uid://cavsgmth8qerh" path="res://Escenas/Escenarios_Mapas/clase_computacion.gd" id="1_4um33"]
 [ext_resource type="Texture2D" uid="uid://b4k0dwl240odw" path="res://Imagenes/tile_map_mapa/aula1.png" id="2_4um33"]
@@ -256,6 +256,21 @@ texture = ExtResource("2_4um33")
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_2pep8")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6wggh"]
+size = Vector2(105, 34)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2pep8"]
+bg_color = Color(0.027451, 1, 0.262745, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.833824, 0.690048, 0.535546, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
 [node name="Clase_computacion" type="Node2D"]
 script = ExtResource("1_4um33")
 
@@ -309,5 +324,23 @@ stream = ExtResource("5_6wggh")
 volume_db = -36.199
 autoplay = true
 
+[node name="salida" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="salida"]
+position = Vector2(52.5, -48)
+shape = SubResource("RectangleShape2D_6wggh")
+
+[node name="Label" type="Label" parent="."]
+offset_top = -88.0
+offset_right = 80.0
+offset_bottom = -65.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.964706, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_2pep8")
+text = "Salida"
+horizontal_alignment = 1
+
 [connection signal="body_entered" from="Acceso_a_la_clase_al_precionar" to="Acceso_a_la_clase_al_precionar" method="_on_body_entered"]
 [connection signal="body_exited" from="Acceso_a_la_clase_al_precionar" to="Acceso_a_la_clase_al_precionar" method="_on_body_exited"]
+[connection signal="body_entered" from="salida" to="Acceso_a_la_clase_al_precionar" method="_on_salida_body_entered"]
+[connection signal="body_exited" from="salida" to="Acceso_a_la_clase_al_precionar" method="_on_salida_body_exited"]
