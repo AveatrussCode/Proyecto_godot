@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://grigk4fgg5me"]
 
-[ext_resource type="Script" path="res://Plan_de_Estudio/Primer_Semestre/clase_02/clase_02.gd" id="1_cqd8f"]
+[ext_resource type="Script" uid="uid://3kn4bsjggitv" path="res://Plan_de_Estudio/Primer_Semestre/clase_02/clase_02.gd" id="1_cqd8f"]
 [ext_resource type="Texture2D" uid="uid://j2rgyvbg60p0" path="res://Imagenes/tile_map_mapa/background_pizarra.png" id="1_dh73r"]
 
 [node name="clase_02" type="Node2D"]
