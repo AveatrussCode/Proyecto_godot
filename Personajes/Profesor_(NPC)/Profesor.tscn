@@ -1,0 +1,198 @@
+[gd_scene load_steps=15 format=3 uid="uid://c8e7conjlwp50"]
+
+[ext_resource type="Script" uid="uid://dykwrqxtp7ehi" path="res://Personajes/Profesor_(NPC)/profesor.gd" id="1_b2qvj"]
+[ext_resource type="Texture2D" path="res://Personajes/Profesor_(NPC)/Animaciones/caminando_abajo.png" id="2_qjt78"]
+[ext_resource type="Texture2D" path="res://Personajes/Profesor_(NPC)/Animaciones/caminando_arriba.png" id="3_avrdc"]
+[ext_resource type="Texture2D" path="res://Personajes/Profesor_(NPC)/Animaciones/caminando_derecha.png" id="4_yickg"]
+[ext_resource type="Texture2D" path="res://Personajes/Profesor_(NPC)/Animaciones/caminando_izquerda.png" id="5_f6uyj"]
+[ext_resource type="Texture2D" path="res://Personajes/Profesor_(NPC)/Animaciones/reposo.png" id="6_2c7kp"]
+
+[sub_resource type="Animation" id="Animation_w5m3w"]
+resource_name = "reposo"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("reposo:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.52),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="Animation" id="Animation_4ojnf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("reposo:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("izquierda:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("derecha:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("arriba:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("abajo:frame")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_uvxip"]
+resource_name = "izqueirda"
+length = 0.9
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("izquierda:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_ikbft"]
+resource_name = "derecha"
+length = 0.9
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("derecha:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_tveo4"]
+resource_name = "arriba"
+length = 0.9
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("arriba:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_oa0c5"]
+resource_name = "abajo"
+length = 0.9
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("abajo:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bg5tr"]
+_data = {
+&"RESET": SubResource("Animation_4ojnf"),
+&"abajo": SubResource("Animation_oa0c5"),
+&"arriba": SubResource("Animation_tveo4"),
+&"derecha": SubResource("Animation_ikbft"),
+&"izqueirda": SubResource("Animation_uvxip"),
+&"reposo": SubResource("Animation_w5m3w")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b2qvj"]
+
+[node name="Profesor" type="CharacterBody2D"]
+script = ExtResource("1_b2qvj")
+
+[node name="abajo" type="Sprite2D" parent="."]
+texture = ExtResource("2_qjt78")
+hframes = 10
+
+[node name="arriba" type="Sprite2D" parent="."]
+texture = ExtResource("3_avrdc")
+hframes = 10
+
+[node name="derecha" type="Sprite2D" parent="."]
+texture = ExtResource("4_yickg")
+hframes = 10
+
+[node name="izquierda" type="Sprite2D" parent="."]
+texture = ExtResource("5_f6uyj")
+hframes = 10
+
+[node name="reposo" type="Sprite2D" parent="."]
+texture = ExtResource("6_2c7kp")
+hframes = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_bg5tr")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_b2qvj")
