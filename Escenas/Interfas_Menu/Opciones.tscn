@@ -42,7 +42,7 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("3_e7meq")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_ackpm")
-text = "no se que poner"
+text = "En proceso ..."
 
 [node name="Back" type="Button" parent="VBoxContainer"]
 layout_mode = 2

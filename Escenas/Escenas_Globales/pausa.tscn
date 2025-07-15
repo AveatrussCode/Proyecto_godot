@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6vxikg5bir6r"]
+
+[ext_resource type="Script" uid="uid://btjwn16o1n3ip" path="res://Escenas/menu_pausa.gd" id="1_7t481"]
+
+[node name="Node" type="Node"]
+process_mode = 1
+script = ExtResource("1_7t481")
+
+[node name="Popup" type="Popup" parent="."]
+initial_position = 2
+size = Vector2i(417, 232)
+
+[node name="Button" type="Button" parent="Popup"]
+offset_left = 128.0
+offset_top = 80.0
+offset_right = 244.0
+offset_bottom = 146.0
+text = "Menu_inicio"
+
+[node name="Label" type="Label" parent="Popup"]
+offset_left = 134.0
+offset_top = 7.0
+offset_right = 348.0
+offset_bottom = 93.0
+text = "Pausa"
+
+[connection signal="pressed" from="Popup/Button" to="." method="_on_button_pressed"]
