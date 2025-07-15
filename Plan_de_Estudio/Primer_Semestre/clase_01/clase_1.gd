@@ -3,7 +3,7 @@ extends Node2D
 
 func _ready() -> void:
 	Dialogic.timeline_ended.connect(_on_dialogic_timeline_end)
-	Dialogic.start("res://Escenas/Plan_de_Estudio/Primer_Semestre/clase_02/clase_1_1.dtl")
+	Dialogic.start("res://Plan_de_Estudio/Primer_Semestre/clase_01/clase_1_1.dtl")
 
 func _on_dialogic_timeline_end() -> void:
 	GLOBAL.create_transition(self, 2)
