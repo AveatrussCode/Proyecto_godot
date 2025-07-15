@@ -31,8 +31,13 @@ directories/dch_directory={
 directories/dtl_directory={
 "Dialogos_alicia": "res://Personajes/npc_1/Dialogos_alicia.dtl",
 "Inprimir_nuetro_hola_mundo": "res://Personajes/Profesor_(NPC)/Dialogos/Inprimir_nuetro_hola_mundo.dtl",
+"clase_04_02": "res://Escenas/Plan_de_Estudio/Primer_Semestre/clase_05/clase_04_02.dtl",
+"clase_04_1": "res://Escenas/Plan_de_Estudio/Primer_Semestre/clase_05/clase_04_1.dtl",
+"clase_05_1": "res://Escenas/Plan_de_Estudio/Primer_Semestre/clase_06/clase_05_1.dtl",
 "clase_1_1": "res://Escenas/Plan_de_Estudio/Primer_Semestre/clase_02/clase_1_1.dtl",
-"clase_1_2": "res://Escenas/Plan_de_Estudio/Primer_Semestre/clase_02/clase_1_2.dtl"
+"clase_1_2": "res://Escenas/Plan_de_Estudio/Primer_Semestre/clase_02/clase_1_2.dtl",
+"clase_3_1": "res://Escenas/Plan_de_Estudio/Primer_Semestre/clase_04/clase_3_1.dtl",
+"clase_3_2": "res://Escenas/Plan_de_Estudio/Primer_Semestre/clase_04/clase_3_2.dtl"
 }
 layout/style_list=["res://Estilo_novela.tres"]
 layout/default_style=""
