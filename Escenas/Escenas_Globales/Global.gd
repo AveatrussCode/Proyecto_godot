@@ -1,4 +1,7 @@
 extends Node
+# guardado de numero de clase que esta
+var numero_clase = -1
+
 
 var return_position := Vector2.ZERO # Guarda la posición del jugador
 #este codigo sera para los objetos movibles
