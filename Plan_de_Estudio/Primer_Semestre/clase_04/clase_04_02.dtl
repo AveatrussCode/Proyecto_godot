@@ -7,23 +7,23 @@ Profesor_zela: Un bucle por definicion es una repetición indefinida, pero nosot
 Profesor_zela: Existen 3 tipos de bucles en C++, el “for”, “while” y el “do while”, cada uno es distinto y sirve para un distinto trabajo,
 [voice path="res://Sonidos/voices/clase_04_2/4.mp3" volume="0.0"]
 Profesor_zela: Primero hablaremos sobre el for, este bucle se repetirá un determinado número de veces, la cantidad de veces de repeticion de este bucle nosotros lo podemos controlar y su estructura es\: \
-for ( inicializacion ; condicion ; actualización ){\
+for ( inicializacion ; condicion ; actualización ) \{\
 };
 [voice path="res://Sonidos/voices/clase_04_2/5.mp3" volume="0.0"]
 Profesor_zela: El espacio de inicialización y actualización en el for puede quedar vacío, pero el espacio de condición nunca debe estar vacío, porque el bucle se repetirá siempre que esa condición se cumpla.\
 En la “inicialización” normalmente se declara o asigna un valor a una variable, generalmente de tipo entero. En la “condición” se coloca la expresión que determina hasta cuándo se debe repetir el bucle; normalmente esta condición involucra la variable inicializada. Finalmente, en la “actualización” se modifica la variable, por ejemplo incrementando o decrementando.
 [voice path="res://Sonidos/voices/clase_04_2/6.mp3" volume="0.0"]
 Profesor_zela: Un ejemplo del for es\:\
-for( int i=0 ; i<10 ; i++){\
+for( int i=0 ; i<10 ; i++)\{\
 cout<< i <<endl;\
 };\
 En este ejemplo el bucle se repite 10 veces y imprime los números del 0 al 9
 [voice path="res://Sonidos/voices/clase_04_2/7.mp3" volume="0.0"]
 Profesor_zela: Ahora pasaremos a el bucle “while”, este bucle es más simple, solo se repetirá hasta que la condición que tiene sea falsa, su estructura es\
-while( condición ){ };
+while( condición )\{ };
 [voice path="res://Sonidos/voices/clase_04_2/8.mp3" volume="0.0"]
 Profesor_zela: El bucle do while es un poco distinto al while normal. La primera repetición del código dentro del bucle se ejecuta sin evaluar la condición, es decir, el bloque de código se ejecuta al menos una vez siempre. Después de esta primera ejecución, se evalúa la condición y el bucle seguirá repitiendo hasta que la condición deje de cumplirse. En resumen, el do while siempre ejecuta el bloque de código al menos una vez y luego verifica si debe continuar. Su estructura es\: \
-do{\
+do\{\
 }while(condición);
 [voice path="res://Sonidos/voices/clase_04_2/9.mp3" volume="0.0"]
 Profesor_zela: Con esto hemos acabado la clase del día de hoy, nos vemos en la siguiente clase.
