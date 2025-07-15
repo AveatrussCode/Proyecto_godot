@@ -1,25 +1,39 @@
+join Profesor_zela right
+[voice path="res://Sonidos/voices/clase_01_1/1.mp3" volume="0.0"]
 Profesor_zela: Buenos días, chicos. Sean bienvenidos a la segunda clase de Aprendiendo Programación.
-Esta clase comenzará con la pregunta\: ¿Qué es un lenguaje de programación?
-Miren, alumnos, primero debemos entender que una computadora no habla nuestro idioma. Para ella, todo se reduce a ceros y unos.
-Es verdad que nosotros podríamos programar escribiendo solo ceros y unos, pero ese método es demasiado largo y tedioso.
-Por eso existen los lenguajes de programación. Un lenguaje de programación es un conjunto de reglas, símbolos y palabras que permiten al programador dar instrucciones a la máquina.
-Para entender cómo funciona un lenguaje de programación, debemos saber que existen lenguajes de alto nivel, lenguajes de nivel medio y lenguajes de bajo nivel.
-Un lenguaje de bajo nivel es aquel que está más cerca del lenguaje máquina, mientras que un lenguaje de alto nivel es el que se acerca más al lenguaje humano, y un lenguaje de nivel medio es aquel que combina ambos lenguajes.\
+[voice path="res://Sonidos/voices/clase_01_1/2.mp3" volume="0.0"]
+Profesor_zela: Esta clase comenzará con la pregunta\: ¿Qué es un lenguaje de programación?
+[voice path="res://Sonidos/voices/clase_01_1/3.mp3" volume="0.0"]
+Profesor_zela: Miren, alumnos, primero debemos entender que una computadora no habla nuestro idioma. Para ella, todo se reduce a ceros y unos.
+[voice path="res://Sonidos/voices/clase_01_1/4.mp3" volume="0.0"]
+Profesor_zela: Es verdad que nosotros podríamos programar escribiendo solo ceros y unos, pero ese método es demasiado largo y tedioso.
+[voice path="res://Sonidos/voices/clase_01_1/5.mp3" volume="0.0"]
+Profesor_zela: Por eso existen los lenguajes de programación. Un lenguaje de programación es un conjunto de reglas, símbolos y palabras que permiten al programador dar instrucciones a la máquina.
+[voice path="res://Sonidos/voices/clase_01_1/6.mp3" volume="0.0"]
+Profesor_zela: Para entender cómo funciona un lenguaje de programación, debemos saber que existen lenguajes de alto nivel, lenguajes de nivel medio y lenguajes de bajo nivel.
+[voice path="res://Sonidos/voices/clase_01_1/7.mp3" volume="0.0"]
+Profesor_zela: Un lenguaje de bajo nivel es aquel que está más cerca del lenguaje máquina, mientras que un lenguaje de alto nivel es el que se acerca más al lenguaje humano, y un lenguaje de nivel medio es aquel que combina ambos lenguajes.\
 Estos tipos de lenguajes tienen sus ventajas y desventajas.
-Un lenguaje de alto nivel es más fácil de programar, pero no permite tener tanto control sobre el hardware.
-Un lenguaje de nivel medio es “amigable” para el programador y también tiene cercanía con el lenguaje máquina; es decir, tiene más control sobre el hardware que un lenguaje de alto nivel.
-Por último, un lenguaje de bajo nivel es más complicado de usar, pero ofrece mayor control sobre el hardware; es decir, es más exacto pero mucho más largo de programar.
-Aquí les daré un ejemplo de cómo imprimir “Hola, mundo” en un lenguaje de alto nivel (en este caso Python), nivel medio (en este caso C++) y de bajo nivel (lenguaje ensamblador).
-Para poner “Hola, mundo” en Python es solo\:
+[voice path="res://Sonidos/voices/clase_01_1/8.mp3" volume="0.0"]
+Profesor_zela: Un lenguaje de alto nivel es más fácil de programar, pero no permite tener tanto control sobre el hardware.
+[voice path="res://Sonidos/voices/clase_01_1/9.mp3" volume="0.0"]
+Profesor_zela: Un lenguaje de nivel medio es “amigable” para el programador y también tiene cercanía con el lenguaje máquina; es decir, tiene más control sobre el hardware que un lenguaje de alto nivel.
+[voice path="res://Sonidos/voices/clase_01_1/10.mp3" volume="0.0"]
+Profesor_zela: Por último, un lenguaje de bajo nivel es más complicado de usar, pero ofrece mayor control sobre el hardware; es decir, es más exacto pero mucho más largo de programar.
+[voice path="res://Sonidos/voices/clase_01_1/11.mp3" volume="0.0"]
+Profesor_zela: Aquí les daré un ejemplo de cómo imprimir “Hola, mundo” en un lenguaje de alto nivel (en este caso Python), nivel medio (en este caso C++) y de bajo nivel (lenguaje ensamblador).\
+Para poner “Hola, mundo” en Python es solo\:\
 print("Hola, mundo")
-Para poner “Hola, mundo” en C++ es\:
-\#include <iostream>\
+[voice path="res://Sonidos/voices/clase_01_1/12.mp3" volume="0.0"]
+Profesor_zela: Para poner “Hola, mundo” en C++ es\:\
+#include <iostream>\
 \
 int main() {\
 std\:\:cout << "Hola, mundo" << std\:\:endl;\
 return 0;\
 }
-Y para poner “Hola, mundo” en lenguaje ensamblador es\:
+[voice path="res://Sonidos/voices/clase_01_1/13.mp3" volume="0.0"]
+Profesor_zela: Y para poner “Hola, mundo” en lenguaje ensamblador es\:\
 section .data\
 mensaje db 'Hola, mundo', 0Ah, '$'   ; mensaje a imprimir\
 \
@@ -34,5 +48,7 @@ int 21h           ; llamada a la interrupción del sistema\
 ; Terminar el programa correctamente\
 mov ax, 4C00h\
 int 21h
-Espero que hayan entendido la diferencia entre cada uno. Normalmente se suele programar con lenguajes de nivel medio porque tienen mayor control sobre el hardware y no son tan complicados como un lenguaje de nivel bajo.
-Espero que hayan entendido toda esta primera sección. Ahora pueden salir a su receso.
+[voice path="res://Sonidos/voices/clase_01_1/14.mp3" volume="0.0"]
+Profesor_zela: Espero que hayan entendido la diferencia entre cada uno. Normalmente se suele programar con lenguajes de nivel medio porque tienen mayor control sobre el hardware y no son tan complicados como un lenguaje de nivel bajo.
+[voice path="res://Sonidos/voices/clase_01_1/15.mp3" volume="0.0"]
+Profesor_zela: Espero que hayan entendido toda esta primera sección. Ahora pueden salir a su receso.
